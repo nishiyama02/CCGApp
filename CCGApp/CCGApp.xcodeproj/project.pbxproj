@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		978ABF781E91B45900C43931 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 978ABF771E91B45900C43931 /* About.storyboard */; };
 		97A2DEAF1E8DDC5C00A8CF3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A2DEAE1E8DDC5C00A8CF3C /* AppDelegate.swift */; };
 		97A2DEB41E8DDC5C00A8CF3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A2DEB21E8DDC5C00A8CF3C /* Main.storyboard */; };
 		97A2DEB71E8DDC5C00A8CF3C /* CCGApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 97A2DEB51E8DDC5C00A8CF3C /* CCGApp.xcdatamodeld */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		978ABF771E91B45900C43931 /* About.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
 		97A2DEAB1E8DDC5B00A8CF3C /* CCGApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCGApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A2DEAE1E8DDC5C00A8CF3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97A2DEB31E8DDC5C00A8CF3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -84,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		978ABF761E918C1000C43931 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				978ABF771E91B45900C43931 /* About.storyboard */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
 		97A2DEA21E8DDC5B00A8CF3C = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +118,7 @@
 		97A2DEAD1E8DDC5B00A8CF3C /* CCGApp */ = {
 			isa = PBXGroup;
 			children = (
+				978ABF761E918C1000C43931 /* About */,
 				97A2DEE21E8FEB1A00A8CF3C /* News */,
 				97A2DEDF1E8FE79900A8CF3C /* Models */,
 			);
@@ -276,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97A2DEBC1E8DDC5C00A8CF3C /* LaunchScreen.storyboard in Resources */,
+				978ABF781E91B45900C43931 /* About.storyboard in Resources */,
 				97A2DEB91E8DDC5C00A8CF3C /* Assets.xcassets in Resources */,
 				97A2DEB41E8DDC5C00A8CF3C /* Main.storyboard in Resources */,
 				97A2DEE41E8FEC0200A8CF3C /* News.storyboard in Resources */,

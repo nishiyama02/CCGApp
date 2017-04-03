@@ -16,6 +16,9 @@ class NewsTableViewController: UITableViewController, QLPreviewControllerDataSou
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Notícias"
+     
+        
+        
         
         self.allNews = FakeModel.sharedInstance.allNews
         

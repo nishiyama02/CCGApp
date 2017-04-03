@@ -20,6 +20,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="TZD-FQ-4N8" kind="relationship" relationship="viewControllers" id="Azf-r4-ElL"/>
+                        <segue destination="XX2-mY-uDx" kind="relationship" relationship="viewControllers" id="p6Q-09-Zhl"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MpA-FL-67Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -35,6 +36,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tix-wG-OnR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-29" y="-29"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="cID-ET-Adk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="About" id="XX2-mY-uDx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Saiba mais" id="AdW-2E-xDV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qvy-wv-tfs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-33" y="22"/>
         </scene>
     </scenes>
 </document>
