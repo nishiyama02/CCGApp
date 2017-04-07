@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		973FDAB71E971D8B00425F93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 973FDAB61E971D8B00425F93 /* Assets.xcassets */; };
 		978ABF781E91B45900C43931 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 978ABF771E91B45900C43931 /* About.storyboard */; };
 		97A2DEAF1E8DDC5C00A8CF3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A2DEAE1E8DDC5C00A8CF3C /* AppDelegate.swift */; };
 		97A2DEB41E8DDC5C00A8CF3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A2DEB21E8DDC5C00A8CF3C /* Main.storyboard */; };
 		97A2DEB71E8DDC5C00A8CF3C /* CCGApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 97A2DEB51E8DDC5C00A8CF3C /* CCGApp.xcdatamodeld */; };
-		97A2DEB91E8DDC5C00A8CF3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97A2DEB81E8DDC5C00A8CF3C /* Assets.xcassets */; };
 		97A2DEBC1E8DDC5C00A8CF3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A2DEBA1E8DDC5C00A8CF3C /* LaunchScreen.storyboard */; };
 		97A2DEC71E8DDC5C00A8CF3C /* CCGAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A2DEC61E8DDC5C00A8CF3C /* CCGAppTests.swift */; };
 		97A2DED21E8DDC5C00A8CF3C /* CCGAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A2DED11E8DDC5C00A8CF3C /* CCGAppUITests.swift */; };
@@ -40,12 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		973FDAB61E971D8B00425F93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		978ABF771E91B45900C43931 /* About.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
 		97A2DEAB1E8DDC5B00A8CF3C /* CCGApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCGApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A2DEAE1E8DDC5C00A8CF3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97A2DEB31E8DDC5C00A8CF3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97A2DEB61E8DDC5C00A8CF3C /* CCGApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CCGApp.xcdatamodel; sourceTree = "<group>"; };
-		97A2DEB81E8DDC5C00A8CF3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97A2DEBB1E8DDC5C00A8CF3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97A2DEBD1E8DDC5C00A8CF3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97A2DEC21E8DDC5C00A8CF3C /* CCGAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCGAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,8 +167,8 @@
 				97A2DEE81E8FF0B600A8CF3C /* FakeModel.swift */,
 				97A2DEB21E8DDC5C00A8CF3C /* Main.storyboard */,
 				97A2DEAE1E8DDC5C00A8CF3C /* AppDelegate.swift */,
-				97A2DEB81E8DDC5C00A8CF3C /* Assets.xcassets */,
 				97A2DEBA1E8DDC5C00A8CF3C /* LaunchScreen.storyboard */,
+				973FDAB61E971D8B00425F93 /* Assets.xcassets */,
 				97A2DEB51E8DDC5C00A8CF3C /* CCGApp.xcdatamodeld */,
 				97A2DEBD1E8DDC5C00A8CF3C /* Info.plist */,
 			);
@@ -288,9 +288,9 @@
 			files = (
 				97A2DEBC1E8DDC5C00A8CF3C /* LaunchScreen.storyboard in Resources */,
 				978ABF781E91B45900C43931 /* About.storyboard in Resources */,
-				97A2DEB91E8DDC5C00A8CF3C /* Assets.xcassets in Resources */,
 				97A2DEB41E8DDC5C00A8CF3C /* Main.storyboard in Resources */,
 				97A2DEE41E8FEC0200A8CF3C /* News.storyboard in Resources */,
+				973FDAB71E971D8B00425F93 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
