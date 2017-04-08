@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		970936E41E988AA10042E0DB /* CurtaJovensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970936E31E988AA10042E0DB /* CurtaJovensViewController.swift */; };
 		973FDAB71E971D8B00425F93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 973FDAB61E971D8B00425F93 /* Assets.xcassets */; };
 		978ABF781E91B45900C43931 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 978ABF771E91B45900C43931 /* About.storyboard */; };
 		97A2DEAF1E8DDC5C00A8CF3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A2DEAE1E8DDC5C00A8CF3C /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		970936E31E988AA10042E0DB /* CurtaJovensViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtaJovensViewController.swift; sourceTree = "<group>"; };
 		973FDAB61E971D8B00425F93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		978ABF771E91B45900C43931 /* About.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
 		97A2DEAB1E8DDC5B00A8CF3C /* CCGApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCGApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				978ABF771E91B45900C43931 /* About.storyboard */,
+				970936E31E988AA10042E0DB /* CurtaJovensViewController.swift */,
 			);
 			name = About;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				97A2DEEB1E8FFA6300A8CF3C /* NewsTableViewCell.swift in Sources */,
 				97A2DEE11E8FE7FB00A8CF3C /* News.swift in Sources */,
 				97A2DEE91E8FF0B600A8CF3C /* FakeModel.swift in Sources */,
+				970936E41E988AA10042E0DB /* CurtaJovensViewController.swift in Sources */,
 				97A2DEB71E8DDC5C00A8CF3C /* CCGApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

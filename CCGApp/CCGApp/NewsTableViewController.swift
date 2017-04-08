@@ -12,11 +12,17 @@ import QuickLook
 class NewsTableViewController: UITableViewController, QLPreviewControllerDataSource {
     
     var allNews = [News]()
+    var refresher : UIRefreshControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Notícias"
-     
+        
+        refresher  = UIRefreshControl ()
+        refresher.attributedTitle = NSAttributedString(string: "Deslize para atualizar")
+        refresher.tintColor = UIColor(red: 74/255.0, green: 140/255.0, blue: 223/255.0, alpha: 1.0)
+        self.tableView.addSubview(refresher)
+        
         
         
         
@@ -85,6 +91,9 @@ class NewsTableViewController: UITableViewController, QLPreviewControllerDataSou
         previewPdf.currentPreviewItemIndex = indexPath.row
         show(previewPdf, sender: nil)
         
+        refresher.endRefreshing()
+        
+        
         
     }
     
@@ -92,8 +101,9 @@ class NewsTableViewController: UITableViewController, QLPreviewControllerDataSou
     func previewController(_ controller: QLPreviewController, previewItemAt index: Int) -> QLPreviewItem{
         let filePath = allNews[index].url
         
-        return filePath as! QLPreviewItem
+        return filePath!as  QLPreviewItem
     }
+    
     
     
     /*
