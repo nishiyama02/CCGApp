@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		970936E41E988AA10042E0DB /* CurtaJovensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970936E31E988AA10042E0DB /* CurtaJovensViewController.swift */; };
 		973FDAB71E971D8B00425F93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 973FDAB61E971D8B00425F93 /* Assets.xcassets */; };
+		9773442A1E9ACBF2001EDB21 /* MapPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977344291E9ACBF2001EDB21 /* MapPlaceViewController.swift */; };
 		978ABF781E91B45900C43931 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 978ABF771E91B45900C43931 /* About.storyboard */; };
+		979BEEFA1E9AB58700C761B6 /* CurtaCcgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979BEEF91E9AB58700C761B6 /* CurtaCcgViewController.swift */; };
 		97A2DEAF1E8DDC5C00A8CF3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A2DEAE1E8DDC5C00A8CF3C /* AppDelegate.swift */; };
 		97A2DEB41E8DDC5C00A8CF3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A2DEB21E8DDC5C00A8CF3C /* Main.storyboard */; };
 		97A2DEB71E8DDC5C00A8CF3C /* CCGApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 97A2DEB51E8DDC5C00A8CF3C /* CCGApp.xcdatamodeld */; };
@@ -43,7 +45,9 @@
 /* Begin PBXFileReference section */
 		970936E31E988AA10042E0DB /* CurtaJovensViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtaJovensViewController.swift; sourceTree = "<group>"; };
 		973FDAB61E971D8B00425F93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		977344291E9ACBF2001EDB21 /* MapPlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPlaceViewController.swift; sourceTree = "<group>"; };
 		978ABF771E91B45900C43931 /* About.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
+		979BEEF91E9AB58700C761B6 /* CurtaCcgViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtaCcgViewController.swift; sourceTree = "<group>"; };
 		97A2DEAB1E8DDC5B00A8CF3C /* CCGApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCGApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A2DEAE1E8DDC5C00A8CF3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97A2DEB31E8DDC5C00A8CF3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,7 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				978ABF771E91B45900C43931 /* About.storyboard */,
+				977344291E9ACBF2001EDB21 /* MapPlaceViewController.swift */,
 				970936E31E988AA10042E0DB /* CurtaJovensViewController.swift */,
+				979BEEF91E9AB58700C761B6 /* CurtaCcgViewController.swift */,
 			);
 			name = About;
 			sourceTree = "<group>";
@@ -320,9 +326,11 @@
 			files = (
 				97A2DEE61E8FEEA100A8CF3C /* NewsTableViewController.swift in Sources */,
 				97A2DEAF1E8DDC5C00A8CF3C /* AppDelegate.swift in Sources */,
+				979BEEFA1E9AB58700C761B6 /* CurtaCcgViewController.swift in Sources */,
 				97A2DEEB1E8FFA6300A8CF3C /* NewsTableViewCell.swift in Sources */,
 				97A2DEE11E8FE7FB00A8CF3C /* News.swift in Sources */,
 				97A2DEE91E8FF0B600A8CF3C /* FakeModel.swift in Sources */,
+				9773442A1E9ACBF2001EDB21 /* MapPlaceViewController.swift in Sources */,
 				970936E41E988AA10042E0DB /* CurtaJovensViewController.swift in Sources */,
 				97A2DEB71E8DDC5C00A8CF3C /* CCGApp.xcdatamodeld in Sources */,
 			);
