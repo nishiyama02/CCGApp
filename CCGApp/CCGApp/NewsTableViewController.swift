@@ -20,7 +20,7 @@ class NewsTableViewController: UITableViewController, QLPreviewControllerDataSou
         
         refresher  = UIRefreshControl ()
         refresher.attributedTitle = NSAttributedString(string: "Deslize para atualizar")
-        refresher.tintColor = UIColor(red: 74/255.0, green: 140/255.0, blue: 223/255.0, alpha: 1.0)
+        refresher.tintColor = UIColor(red: 74.0/255.0, green: 140.0/255.0, blue: 223.0/255.0, alpha: 1.0)
         self.tableView.addSubview(refresher)
         
         
