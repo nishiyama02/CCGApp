@@ -12,18 +12,12 @@ import MapKit
 class MapPlaceViewController: UIViewController, MKMapViewDelegate {
     
     @IBOutlet weak var mapCcg: MKMapView!
-    
-    @IBAction func howToGetButton(_ sender: UIButton) {
-    }
-    
-    
-    
-   
-    
+    @IBOutlet weak var howToGetButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    
+        
         self.title = "Localização"
         self.mapCcg.delegate = self
         
@@ -40,9 +34,12 @@ class MapPlaceViewController: UIViewController, MKMapViewDelegate {
         annotation.title = "Comunidade Cristã em Guarulhos"
         annotation.subtitle = "Igreja"
         
-        
+        let color = UIColor(red: 74.0/255.0, green: 140.0/255.0, blue: 223.0/255.0, alpha: 1.0)
+        self.howToGetButton.layer.borderColor = color.cgColor
+
         
        
+        
         
         mapCcg.addAnnotation(annotation)
         mapCcg.selectAnnotation(annotation, animated: true)
@@ -50,6 +47,23 @@ class MapPlaceViewController: UIViewController, MKMapViewDelegate {
         
         
     }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+    @IBAction func howToGetButton(_ sender: UIButton) {
+        
+        if (UIApplication.shared.canOpenURL(URL(string:"comgooglemaps://")!)) {
+            UIApplication.shared.open(URL(string:
+                "comgooglemaps://?center=-23.452359,46.534200&zoom=14&views=traffic")!)
+        } else {
+            print("Can't use comgooglemaps://");
+        }
+    }
+    
     func mapView(_ mapView: MKMapView,
                  viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if (annotation is MKUserLocation) { return nil }
@@ -68,8 +82,8 @@ class MapPlaceViewController: UIViewController, MKMapViewDelegate {
             v?.rightCalloutAccessoryView = UIButton(type: .infoLight)
             
             
-       
-          
+            
+            
             
         }
         
@@ -77,10 +91,7 @@ class MapPlaceViewController: UIViewController, MKMapViewDelegate {
     }
     
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
     
     
     /*
