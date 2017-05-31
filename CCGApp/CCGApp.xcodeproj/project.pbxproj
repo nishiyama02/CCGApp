@@ -65,7 +65,7 @@
 		97A2DEE01E8FE7FB00A8CF3C /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		97A2DEE31E8FEC0200A8CF3C /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 		97A2DEE51E8FEEA100A8CF3C /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
-		97A2DEE81E8FF0B600A8CF3C /* FakeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeModel.swift; sourceTree = "<group>"; };
+		97A2DEE81E8FF0B600A8CF3C /* FakeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FakeModel.swift; path = "../../../../Users/GabrielAlberto/Documents/Projetos Externos/CCGApp/CCGApp/CCGApp/FakeModel.swift"; sourceTree = DEVELOPER_DIR; };
 		97A2DEEA1E8FFA6300A8CF3C /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

@@ -50,13 +50,11 @@ class NewsTableViewController: UITableViewController, QLPreviewControllerDataSou
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return allNews.count
-        
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Configure the cell...
-        
         let cellIdentifier = "Cell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! NewsTableViewCell
         
@@ -67,8 +65,6 @@ class NewsTableViewController: UITableViewController, QLPreviewControllerDataSou
         let year = calendar.component(.year, from: date!)-2000
         let month = calendar.component(.month, from: date!)
         
-        
-        
         cell.dateCell.text = "\(month)/\(year)"
         
         return cell
@@ -77,24 +73,18 @@ class NewsTableViewController: UITableViewController, QLPreviewControllerDataSou
     //MARK: QuickLook DataSources
     
     func numberOfPreviewItems(in controller: QLPreviewController) -> Int{
-        
         return allNews.count
     }
     
     
     //MARK: Funcao Select
-    
-    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath){
-        
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let previewPdf = QLPreviewController()
         previewPdf.dataSource = self
         previewPdf.currentPreviewItemIndex = indexPath.row
         show(previewPdf, sender: nil)
         
         refresher.endRefreshing()
-        
-        
-        
     }
     
     
