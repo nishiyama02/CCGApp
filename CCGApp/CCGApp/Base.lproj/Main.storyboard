@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IRe-yB-z6Y">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IRe-yB-z6Y">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -31,7 +31,7 @@
         <scene sceneID="gYR-cQ-gAh">
             <objects>
                 <viewControllerPlaceholder storyboardName="News" id="TZD-FQ-4N8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Notícias" id="rMB-Cj-iOP"/>
+                    <tabBarItem key="tabBarItem" title="Notícias" image="News" selectedImage="News" id="rMB-Cj-iOP"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tix-wG-OnR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -41,11 +41,15 @@
         <scene sceneID="cID-ET-Adk">
             <objects>
                 <viewControllerPlaceholder storyboardName="About" id="XX2-mY-uDx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Saiba mais" id="AdW-2E-xDV"/>
+                    <tabBarItem key="tabBarItem" title="Sobre" image="More" selectedImage="More" id="AdW-2E-xDV"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qvy-wv-tfs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-33" y="22"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="More" width="25" height="25"/>
+        <image name="News" width="25" height="25"/>
+    </resources>
 </document>
