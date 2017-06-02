@@ -14,7 +14,7 @@ protocol VideoManagerDelegate {
 }
 
 class VideoManager: NSObject {
-    let API_KEY = "AIzaSyBP4-Hta2cRB1mvFCU9WmfAhxA1metDRys"
+    let API_KEY = "AIzaSyDR96YeQQpmzCLgwnIkjQwmPwrJdwMs0oY"
     let UPLOADS_PLAYLIST_ID = "PLTbbXJzj2Sz3jkSaIFxURr4cRIL0vm7qt"
     
     var videos = [Video]()
