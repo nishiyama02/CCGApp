@@ -19,6 +19,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="WZE-Wa-lop">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="barTintColor" red="0.2901960784" green="0.54901960780000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
@@ -45,9 +46,8 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JN1-zc-DX9">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JN1-zc-DX9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="180" id="xZB-h1-uJZ" customClass="VideoTableViewCell" customModule="CCGApp" customModuleProvider="target">
@@ -87,6 +87,7 @@
                                         <connections>
                                             <outlet property="thumbnailImage" destination="j83-Mq-A5y" id="5ca-nM-VUD"/>
                                             <outlet property="titleLabel" destination="0lE-7e-0AY" id="ASD-RV-0b5"/>
+                                            <segue destination="10Z-TC-cos" kind="show" identifier="goToVideo" id="ijo-qJ-Dke"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -135,6 +136,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="JN1-zc-DX9" firstAttribute="leading" secondItem="GPV-SZ-IpT" secondAttribute="leading" id="6uv-Sg-SUj"/>
+                            <constraint firstAttribute="trailing" secondItem="JN1-zc-DX9" secondAttribute="trailing" id="CsZ-CX-fhl"/>
+                            <constraint firstItem="JN1-zc-DX9" firstAttribute="top" secondItem="ynb-IH-agt" secondAttribute="bottom" id="ESX-Tn-SkO"/>
+                            <constraint firstItem="BV3-sC-dws" firstAttribute="top" secondItem="JN1-zc-DX9" secondAttribute="bottom" id="H8q-ix-VWg"/>
                             <constraint firstItem="dZ9-jI-HZi" firstAttribute="centerX" secondItem="GPV-SZ-IpT" secondAttribute="centerX" id="Rw4-jX-Jwr"/>
                             <constraint firstItem="dZ9-jI-HZi" firstAttribute="centerY" secondItem="GPV-SZ-IpT" secondAttribute="centerY" id="ZpZ-Ie-4oF"/>
                         </constraints>
@@ -149,6 +154,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BBE-6m-jIq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="309.60000000000002" y="-18.440779610194905"/>
+        </scene>
+        <!--Detail Video View Controller-->
+        <scene sceneID="I12-QC-F6L">
+            <objects>
+                <viewController id="10Z-TC-cos" customClass="DetailVideoViewController" customModule="CCGApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="veD-87-uL8"/>
+                        <viewControllerLayoutGuide type="bottom" id="JY7-77-eq8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EnW-ub-xU2">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fa-Gg-6GK" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="217"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="217" id="rWZ-N2-hqL"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comunidade Crista em Guarulhos - Palavra ministrada por Marcelo" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Bc-WL-f76">
+                                <rect key="frame" x="16" y="225" width="343" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="Fh8-q5-YuS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucY-m3-UID">
+                                <rect key="frame" x="16" y="300" width="343" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ucY-m3-UID" firstAttribute="top" secondItem="2Bc-WL-f76" secondAttribute="bottom" constant="8" id="0Z6-ce-dwx"/>
+                            <constraint firstItem="5fa-Gg-6GK" firstAttribute="top" secondItem="veD-87-uL8" secondAttribute="bottom" id="Bie-gI-C9O"/>
+                            <constraint firstItem="5fa-Gg-6GK" firstAttribute="leading" secondItem="EnW-ub-xU2" secondAttribute="leadingMargin" constant="-16" id="H23-vU-ldt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2Bc-WL-f76" secondAttribute="trailing" id="LZB-V4-BP7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5fa-Gg-6GK" secondAttribute="trailing" constant="-16" id="MN9-lR-qtw"/>
+                            <constraint firstItem="JY7-77-eq8" firstAttribute="top" secondItem="ucY-m3-UID" secondAttribute="bottom" constant="62" id="gjG-Ec-go9"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ucY-m3-UID" secondAttribute="leading" id="n3t-QC-yRY"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="2Bc-WL-f76" secondAttribute="leading" id="sYf-3f-bh5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ucY-m3-UID" secondAttribute="trailing" id="xVu-Dw-IVn"/>
+                            <constraint firstItem="2Bc-WL-f76" firstAttribute="top" secondItem="5fa-Gg-6GK" secondAttribute="bottom" constant="8" id="y9t-OI-TKx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionVideoText" destination="ucY-m3-UID" id="4Ig-d3-OZA"/>
+                        <outlet property="playerYoutube" destination="5fa-Gg-6GK" id="GR3-GA-jX7"/>
+                        <outlet property="titleVideoLabel" destination="2Bc-WL-f76" id="1qX-As-0NU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Wr-Uh-CPG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048.8" y="-18.440779610194905"/>
         </scene>
     </scenes>
     <resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mi9-S9-7uI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="pay-Fu-mna">
+            <objects>
+                <tabBarController id="mi9-S9-7uI" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="OSd-hF-jdf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="1Q8-ZB-VTG" kind="relationship" relationship="viewControllers" id="D9u-uX-DCr"/>
+                        <segue destination="qf7-Z2-z2r" kind="relationship" relationship="viewControllers" id="eKg-45-MxO"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ulw-t5-aJT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-931" y="-417"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="USf-ox-iim">
+            <objects>
+                <viewControllerPlaceholder storyboardName="News" id="1Q8-ZB-VTG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Notícias" image="NoticiasBar" selectedImage="NoticiasBar" id="oG6-Gx-e6i"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WpJ-t4-DIS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-333" y="-599"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="6Yt-RZ-YxG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="About" id="qf7-Z2-z2r" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="CyZ-OW-lHb"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b6w-q2-1zY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-323" y="-383"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NoticiasBar" width="25" height="25"/>
+    </resources>
+</document>

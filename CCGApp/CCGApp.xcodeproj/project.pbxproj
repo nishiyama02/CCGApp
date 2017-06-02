@@ -16,6 +16,7 @@
 		970324681EE09B7E0053CCE8 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970324671EE09B7E0053CCE8 /* VideoTableViewCell.swift */; };
 		970936E41E988AA10042E0DB /* CurtaJovensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970936E31E988AA10042E0DB /* CurtaJovensViewController.swift */; };
 		970D02A51EE0AA8F00E703FC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970D02A41EE0AA8F00E703FC /* Alamofire.framework */; };
+		971534241EE1D04D00B613FB /* DetailVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971534231EE1D04D00B613FB /* DetailVideoViewController.swift */; };
 		972EBC601EDE621B004D1B54 /* FakeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972EBC5F1EDE621B004D1B54 /* FakeModel.swift */; };
 		973FDAB71E971D8B00425F93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 973FDAB61E971D8B00425F93 /* Assets.xcassets */; };
 		9773442A1E9ACBF2001EDB21 /* MapPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977344291E9ACBF2001EDB21 /* MapPlaceViewController.swift */; };
@@ -69,6 +70,7 @@
 		970324671EE09B7E0053CCE8 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		970936E31E988AA10042E0DB /* CurtaJovensViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurtaJovensViewController.swift; sourceTree = "<group>"; };
 		970D02A41EE0AA8F00E703FC /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		971534231EE1D04D00B613FB /* DetailVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVideoViewController.swift; sourceTree = "<group>"; };
 		972EBC5F1EDE621B004D1B54 /* FakeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeModel.swift; sourceTree = "<group>"; };
 		973FDAB61E971D8B00425F93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		977344291E9ACBF2001EDB21 /* MapPlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPlaceViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				970324621EE092D20053CCE8 /* Manager */,
 				9703245E1EE090820053CCE8 /* Videos.storyboard */,
 				970324651EE095760053CCE8 /* VideosViewController.swift */,
+				971534231EE1D04D00B613FB /* DetailVideoViewController.swift */,
 			);
 			name = Videos;
 			sourceTree = "<group>";
@@ -591,6 +594,7 @@
 				970936E41E988AA10042E0DB /* CurtaJovensViewController.swift in Sources */,
 				97C89D2F1EDF3A4E002773E9 /* ChurchImageTableViewCell.swift in Sources */,
 				972EBC601EDE621B004D1B54 /* FakeModel.swift in Sources */,
+				971534241EE1D04D00B613FB /* DetailVideoViewController.swift in Sources */,
 				97A2DEB71E8DDC5C00A8CF3C /* CCGApp.xcdatamodeld in Sources */,
 				970324661EE095760053CCE8 /* VideosViewController.swift in Sources */,
 				97C89D251EDF3058002773E9 /* WorshipTableViewController.swift in Sources */,
