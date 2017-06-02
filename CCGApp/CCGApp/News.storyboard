@@ -76,7 +76,7 @@
         <scene sceneID="7uq-6A-ET1">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="l3G-Qv-IuD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Notícias" image="News" selectedImage="News" id="SnV-hA-OSu"/>
+                    <tabBarItem key="tabBarItem" title="Notícias" image="NewsNotSelected" selectedImage="NewsSelected" id="SnV-hA-OSu"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="phg-Pr-0yx">
@@ -100,6 +100,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="News" width="25" height="25"/>
+        <image name="NewsNotSelected" width="25" height="25"/>
+        <image name="NewsSelected" width="25" height="25"/>
     </resources>
 </document>

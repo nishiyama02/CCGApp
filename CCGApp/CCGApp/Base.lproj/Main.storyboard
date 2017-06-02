@@ -18,6 +18,11 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.2901960784" green="0.54901960780000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="TZD-FQ-4N8" kind="relationship" relationship="viewControllers" id="Azf-r4-ElL"/>
@@ -33,7 +38,7 @@
         <scene sceneID="gYR-cQ-gAh">
             <objects>
                 <viewControllerPlaceholder storyboardName="News" id="TZD-FQ-4N8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Notícias" image="News" selectedImage="News" id="rMB-Cj-iOP"/>
+                    <tabBarItem key="tabBarItem" title="Notícias" image="NewsNotSelected" selectedImage="NewsSelected" id="rMB-Cj-iOP"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tix-wG-OnR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,7 +48,7 @@
         <scene sceneID="cID-ET-Adk">
             <objects>
                 <viewControllerPlaceholder storyboardName="About" id="XX2-mY-uDx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Sobre" image="More" selectedImage="More" id="AdW-2E-xDV"/>
+                    <tabBarItem key="tabBarItem" title="Sobre" image="SaibaMaisNotSelected" selectedImage="SaibaMaisSelected" id="AdW-2E-xDV"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qvy-wv-tfs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -53,7 +58,7 @@
         <scene sceneID="QqH-EU-fQK">
             <objects>
                 <viewControllerPlaceholder storyboardName="Videos" id="joy-gx-5Ef" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Palavras" image="PalavrasVideo" selectedImage="PalavrasVideo" id="Vww-9k-w8x"/>
+                    <tabBarItem key="tabBarItem" title="Palavras" image="PalavrasNotSelected" selectedImage="PalavrasSelected" id="Vww-9k-w8x"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AMv-dG-G2X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,8 +66,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="More" width="25" height="25"/>
-        <image name="News" width="25" height="25"/>
-        <image name="PalavrasVideo" width="25" height="25"/>
+        <image name="NewsNotSelected" width="25" height="25"/>
+        <image name="NewsSelected" width="25" height="25"/>
+        <image name="PalavrasNotSelected" width="25" height="25"/>
+        <image name="PalavrasSelected" width="25" height="25"/>
+        <image name="SaibaMaisNotSelected" width="25" height="25"/>
+        <image name="SaibaMaisSelected" width="25" height="25"/>
     </resources>
 </document>

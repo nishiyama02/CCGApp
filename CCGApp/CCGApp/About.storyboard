@@ -1184,7 +1184,7 @@ Você é o nosso convidado.</string>
         <scene sceneID="l5x-xN-gAZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pcv-V5-GqB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Sobre" image="More" selectedImage="More" id="OWE-t2-WuZ"/>
+                    <tabBarItem key="tabBarItem" title="Sobre" image="SaibaMaisNotSelected" selectedImage="SaibaMaisSelected" id="OWE-t2-WuZ"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="3IV-wy-v7v">
@@ -1599,8 +1599,9 @@ Corre pra cá!
         <image name="LinkedIn_48" width="48" height="48"/>
         <image name="Localizacao" width="48" height="48"/>
         <image name="MatheusDevQ" width="680" height="680"/>
-        <image name="More" width="25" height="25"/>
         <image name="Pres" width="48" height="48"/>
+        <image name="SaibaMaisNotSelected" width="25" height="25"/>
+        <image name="SaibaMaisSelected" width="25" height="25"/>
         <image name="Sunday_48" width="48" height="48"/>
         <image name="Teens" width="48" height="48"/>
         <image name="imageView:ugy-3b-qRb:image" width="37" height="37">

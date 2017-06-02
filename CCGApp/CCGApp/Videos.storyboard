@@ -14,7 +14,7 @@
         <scene sceneID="nR8-x9-ere">
             <objects>
                 <navigationController id="3OY-gU-Tug" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Palavras" image="PalavrasVideo" selectedImage="PalavrasVideo" id="mP5-6y-Xos"/>
+                    <tabBarItem key="tabBarItem" title="Palavras" image="PalavrasNotSelected" selectedImage="PalavrasSelected" id="mP5-6y-Xos"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="WZE-Wa-lop">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -84,6 +84,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="0lE-7e-0AY" secondAttribute="trailing" id="wyU-2A-aaZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <connections>
                                             <outlet property="thumbnailImage" destination="j83-Mq-A5y" id="5ca-nM-VUD"/>
                                             <outlet property="titleLabel" destination="0lE-7e-0AY" id="ASD-RV-0b5"/>
@@ -218,6 +219,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="PalavrasVideo" width="25" height="25"/>
+        <image name="PalavrasNotSelected" width="25" height="25"/>
+        <image name="PalavrasSelected" width="25" height="25"/>
     </resources>
 </document>
