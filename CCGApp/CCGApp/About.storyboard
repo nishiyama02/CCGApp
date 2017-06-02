@@ -1397,10 +1397,10 @@ Somos a sustentação!
             </objects>
             <point key="canvasLocation" x="2416.8000000000002" y="403.44827586206901"/>
         </scene>
-        <!--Adolescentes-->
+        <!--Teens-->
         <scene sceneID="W45-wi-E42">
             <objects>
-                <tableViewController title="Adolescentes" id="Olv-KP-E8A" sceneMemberID="viewController">
+                <tableViewController title="Teens" id="Olv-KP-E8A" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="VhS-pb-nxC">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
