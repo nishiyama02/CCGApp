@@ -55,7 +55,7 @@ class MapPlaceViewController: UIViewController, MKMapViewDelegate {
     
     
     @IBAction func howToGetButton(_ sender: UIButton) {
-        
+ 
         if (UIApplication.shared.canOpenURL(URL(string:"comgooglemaps://")!)) {
             UIApplication.shared.open(URL(string:
                 "comgooglemaps://?center=-23.452359,46.534200&zoom=14&views=traffic")!)

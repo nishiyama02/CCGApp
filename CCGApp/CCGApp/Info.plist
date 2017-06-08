@@ -6,6 +6,7 @@
     <array>
     <string>fb</string>
     <string>instagram</string>
+    <string>waze</string>
     </array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>

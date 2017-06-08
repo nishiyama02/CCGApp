@@ -17,6 +17,9 @@
 		970D02A51EE0AA8F00E703FC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970D02A41EE0AA8F00E703FC /* Alamofire.framework */; };
 		971534241EE1D04D00B613FB /* DetailVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971534231EE1D04D00B613FB /* DetailVideoViewController.swift */; };
 		972EBC601EDE621B004D1B54 /* FakeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972EBC5F1EDE621B004D1B54 /* FakeModel.swift */; };
+		973B4B6B1EE8C5EC00C16CBC /* TeensTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B4B6A1EE8C5EC00C16CBC /* TeensTableViewController.swift */; };
+		973B4B6D1EE8CA7100C16CBC /* TeensImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B4B6C1EE8CA7100C16CBC /* TeensImageTableViewCell.swift */; };
+		973B4B6F1EE8CA8400C16CBC /* TeensInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B4B6E1EE8CA8400C16CBC /* TeensInformationTableViewCell.swift */; };
 		973FDAB71E971D8B00425F93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 973FDAB61E971D8B00425F93 /* Assets.xcassets */; };
 		9773442A1E9ACBF2001EDB21 /* MapPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977344291E9ACBF2001EDB21 /* MapPlaceViewController.swift */; };
 		9773442C1E9EC0EA001EDB21 /* LinkedinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9773442B1E9EC0EA001EDB21 /* LinkedinViewController.swift */; };
@@ -34,6 +37,9 @@
 		97ABDEDA1EE3A89200F306F5 /* JovensTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ABDED91EE3A89200F306F5 /* JovensTableViewController.swift */; };
 		97ABDEDC1EE3AB0D00F306F5 /* JovensImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ABDEDB1EE3AB0D00F306F5 /* JovensImageTableViewCell.swift */; };
 		97ABDEDE1EE3B0AC00F306F5 /* JovensInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ABDEDD1EE3B0AC00F306F5 /* JovensInformationTableViewCell.swift */; };
+		97ABDEE01EE4BE1800F306F5 /* ChurchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ABDEDF1EE4BE1800F306F5 /* ChurchTableViewController.swift */; };
+		97ABDEE21EE4C31700F306F5 /* IgrejaImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ABDEE11EE4C31700F306F5 /* IgrejaImageTableViewCell.swift */; };
+		97ABDEE41EE4C54500F306F5 /* ChurchInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ABDEE31EE4C54500F306F5 /* ChurchInformationTableViewCell.swift */; };
 		97C89D251EDF3058002773E9 /* WorshipTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C89D241EDF3058002773E9 /* WorshipTableViewController.swift */; };
 		97C89D2F1EDF3A4E002773E9 /* ChurchImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C89D2E1EDF3A4E002773E9 /* ChurchImageTableViewCell.swift */; };
 		97C89D311EDF3A60002773E9 /* FridayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C89D301EDF3A60002773E9 /* FridayTableViewCell.swift */; };
@@ -72,6 +78,9 @@
 		970D02A41EE0AA8F00E703FC /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		971534231EE1D04D00B613FB /* DetailVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVideoViewController.swift; sourceTree = "<group>"; };
 		972EBC5F1EDE621B004D1B54 /* FakeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeModel.swift; sourceTree = "<group>"; };
+		973B4B6A1EE8C5EC00C16CBC /* TeensTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeensTableViewController.swift; sourceTree = "<group>"; };
+		973B4B6C1EE8CA7100C16CBC /* TeensImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeensImageTableViewCell.swift; sourceTree = "<group>"; };
+		973B4B6E1EE8CA8400C16CBC /* TeensInformationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeensInformationTableViewCell.swift; sourceTree = "<group>"; };
 		973FDAB61E971D8B00425F93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		977344291E9ACBF2001EDB21 /* MapPlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPlaceViewController.swift; sourceTree = "<group>"; };
 		9773442B1E9EC0EA001EDB21 /* LinkedinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedinViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +104,9 @@
 		97ABDED91EE3A89200F306F5 /* JovensTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JovensTableViewController.swift; sourceTree = "<group>"; };
 		97ABDEDB1EE3AB0D00F306F5 /* JovensImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JovensImageTableViewCell.swift; sourceTree = "<group>"; };
 		97ABDEDD1EE3B0AC00F306F5 /* JovensInformationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JovensInformationTableViewCell.swift; sourceTree = "<group>"; };
+		97ABDEDF1EE4BE1800F306F5 /* ChurchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChurchTableViewController.swift; sourceTree = "<group>"; };
+		97ABDEE11EE4C31700F306F5 /* IgrejaImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IgrejaImageTableViewCell.swift; sourceTree = "<group>"; };
+		97ABDEE31EE4C54500F306F5 /* ChurchInformationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChurchInformationTableViewCell.swift; sourceTree = "<group>"; };
 		97C89D241EDF3058002773E9 /* WorshipTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorshipTableViewController.swift; sourceTree = "<group>"; };
 		97C89D2E1EDF3A4E002773E9 /* ChurchImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChurchImageTableViewCell.swift; sourceTree = "<group>"; };
 		97C89D301EDF3A60002773E9 /* FridayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FridayTableViewCell.swift; sourceTree = "<group>"; };
@@ -171,6 +183,8 @@
 				9773442B1E9EC0EA001EDB21 /* LinkedinViewController.swift */,
 				97C89D241EDF3058002773E9 /* WorshipTableViewController.swift */,
 				97ABDED91EE3A89200F306F5 /* JovensTableViewController.swift */,
+				97ABDEDF1EE4BE1800F306F5 /* ChurchTableViewController.swift */,
+				973B4B6A1EE8C5EC00C16CBC /* TeensTableViewController.swift */,
 			);
 			name = About;
 			sourceTree = "<group>";
@@ -269,6 +283,10 @@
 				97C89D321EDF3A6A002773E9 /* SundayTableViewCell.swift */,
 				97ABDEDB1EE3AB0D00F306F5 /* JovensImageTableViewCell.swift */,
 				97ABDEDD1EE3B0AC00F306F5 /* JovensInformationTableViewCell.swift */,
+				97ABDEE11EE4C31700F306F5 /* IgrejaImageTableViewCell.swift */,
+				97ABDEE31EE4C54500F306F5 /* ChurchInformationTableViewCell.swift */,
+				973B4B6C1EE8CA7100C16CBC /* TeensImageTableViewCell.swift */,
+				973B4B6E1EE8CA8400C16CBC /* TeensInformationTableViewCell.swift */,
 			);
 			name = cell;
 			sourceTree = "<group>";
@@ -588,6 +606,9 @@
 				97A2DEAF1E8DDC5C00A8CF3C /* AppDelegate.swift in Sources */,
 				97A2DEEB1E8FFA6300A8CF3C /* NewsTableViewCell.swift in Sources */,
 				970324611EE092640053CCE8 /* Video.swift in Sources */,
+				973B4B6D1EE8CA7100C16CBC /* TeensImageTableViewCell.swift in Sources */,
+				97ABDEE01EE4BE1800F306F5 /* ChurchTableViewController.swift in Sources */,
+				973B4B6F1EE8CA8400C16CBC /* TeensInformationTableViewCell.swift in Sources */,
 				97A2DEE11E8FE7FB00A8CF3C /* News.swift in Sources */,
 				97C89D331EDF3A6A002773E9 /* SundayTableViewCell.swift in Sources */,
 				9773442C1E9EC0EA001EDB21 /* LinkedinViewController.swift in Sources */,
@@ -602,8 +623,11 @@
 				97A2DEB71E8DDC5C00A8CF3C /* CCGApp.xcdatamodeld in Sources */,
 				970324661EE095760053CCE8 /* VideosViewController.swift in Sources */,
 				97C89D251EDF3058002773E9 /* WorshipTableViewController.swift in Sources */,
+				97ABDEE41EE4C54500F306F5 /* ChurchInformationTableViewCell.swift in Sources */,
+				97ABDEE21EE4C31700F306F5 /* IgrejaImageTableViewCell.swift in Sources */,
 				970324641EE093050053CCE8 /* VideoManager.swift in Sources */,
 				970324681EE09B7E0053CCE8 /* VideoTableViewCell.swift in Sources */,
+				973B4B6B1EE8C5EC00C16CBC /* TeensTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

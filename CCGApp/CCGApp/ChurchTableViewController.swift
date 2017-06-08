@@ -1,5 +1,5 @@
 //
-//  JovensTableViewController.swift
+//  ChurchTableViewController.swift
 //  CCGApp
 //
 //  Created by Matheus Nishi on 04/06/17.
@@ -8,10 +8,11 @@
 
 import UIKit
 
-class JovensTableViewController: UITableViewController {
+class ChurchTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -33,7 +34,6 @@ class JovensTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return 2
     }
     
@@ -43,21 +43,27 @@ class JovensTableViewController: UITableViewController {
         let cell: UITableViewCell!
         
         if indexPath.row == 0 {
-            cell = tableView.dequeueReusableCell(withIdentifier: "imageJovensCell", for: indexPath) as! JovensImageTableViewCell
+            cell = tableView.dequeueReusableCell(withIdentifier: "igrejaImageCell", for: indexPath) as! IgrejaImageTableViewCell
+            
         } else if indexPath.row == 1 {
-            cell = tableView.dequeueReusableCell(withIdentifier: "informationJovensCell", for: indexPath) as! JovensInformationTableViewCell
+            cell = tableView.dequeueReusableCell(withIdentifier: "churchInformationCell", for: indexPath) as! ChurchInformationTableViewCell
         } else {
             cell = UITableViewCell()
         }
         
         return cell
+        
+        
+        // Configure the cell...
+        
+        
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0 {
-            return 255
+            return 310
         } else if indexPath.row == 1{
-            return 271
+            return 500
         } else {
             return 100
         }
@@ -73,8 +79,9 @@ class JovensTableViewController: UITableViewController {
     
     @IBAction func likeOnFacebook(_ sender: Any) {
         
-        let facebookURL = URL(string: "https://www.facebook.com/jovens.ccg/")
-        let facebookAppURL = URL(string: "fb://profile/158530114353205")
+        
+        let facebookURL = URL(string: "https://www.facebook.com/ccguarulhos/")
+        let facebookAppURL = URL(string: "fb://profile/332907883450061")
         
         let app = UIApplication.shared
         
@@ -86,20 +93,7 @@ class JovensTableViewController: UITableViewController {
         }
     }
     
-    @IBAction func followOnInstagram(_ sender: Any) {
-        let instagramURL = URL(string: "https://www.instagram.com/jovensccg/?hl=pt")
-        let instagramAppURL = URL(string: "instagram://user?username=jovensccg")
-        
-        let app = UIApplication.shared
-        
-        
-        if app.canOpenURL(instagramAppURL!) {
-            app.open(instagramAppURL!, options: [:], completionHandler: nil)
-        } else {
-            app.open(instagramURL!, options: [:], completionHandler: nil)
-        }
-
-    }
+    
     
     
     /*
