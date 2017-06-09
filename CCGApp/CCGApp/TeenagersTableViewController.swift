@@ -1,18 +1,17 @@
 //
-//  ChurchTableViewController.swift
+//  TeenagersTableViewController.swift
 //  CCGApp
 //
-//  Created by Matheus Nishi on 04/06/17.
+//  Created by Matheus Nishi on 08/06/17.
 //  Copyright © 2017 Matheus Nishi. All rights reserved.
 //
 
 import UIKit
 
-class ChurchTableViewController: UITableViewController {
+class TeenagersTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -34,55 +33,42 @@ class ChurchTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
         return 2
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell: UITableViewCell!
         
         if indexPath.row == 0 {
-            cell = tableView.dequeueReusableCell(withIdentifier: "igrejaImageCell", for: indexPath) as! IgrejaImageTableViewCell
+            cell = tableView.dequeueReusableCell(withIdentifier: "TeenagersImageCell", for: indexPath) as! TeenagersImageTableViewCell
             
         } else if indexPath.row == 1 {
-            cell = tableView.dequeueReusableCell(withIdentifier: "churchInformationCell", for: indexPath) as! ChurchInformationTableViewCell
+            cell = tableView.dequeueReusableCell(withIdentifier: "TeenagersInformationCell", for: indexPath) as! TeenagersInformationTableViewCell
         } else {
             cell = UITableViewCell()
         }
         
+        
+        
         return cell
-        
-        
-        // Configure the cell...
-        
-        
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0 {
-            return 330
+            return 255
         } else if indexPath.row == 1{
-            return 500
+            return 353
         } else {
             return 100
         }
     }
     
-    
-    
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    
     @IBAction func likeOnFacebook(_ sender: Any) {
         
-        
-        let facebookURL = URL(string: "https://www.facebook.com/ccguarulhos/")
-        let facebookAppURL = URL(string: "fb://profile/332907883450061")
-        
+        let facebookURL = URL(string: "https://www.facebook.com/arribaados/")
+        let facebookAppURL = URL(string: "fb://profile/245201732485919")
         let app = UIApplication.shared
         
         
@@ -91,10 +77,29 @@ class ChurchTableViewController: UITableViewController {
         } else {
             app.open(facebookURL!, options: [:], completionHandler: nil)
         }
+        
     }
     
-    
-    
+    @IBAction func followOnInstagram(_ sender: Any) {
+        let instagramURL = URL(string: "https://www.instagram.com/adosccg/?hl=pt")
+        let instagramAppURL = URL(string: "instagram://user?username=adosccg")
+        let app = UIApplication.shared
+        
+        
+        if app.canOpenURL(instagramAppURL!) {
+            app.open(instagramAppURL!, options: [:], completionHandler: nil)
+        } else {
+            app.open(instagramURL!, options: [:], completionHandler: nil)
+        }
+        
+    }
+    /*
+     // Override to support conditional editing of the table view.
+     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+     // Return false if you do not want the specified item to be editable.
+     return true
+     }
+     */
     
     /*
      // Override to support editing the table view.

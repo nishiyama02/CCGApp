@@ -14,6 +14,10 @@
 		970324641EE093050053CCE8 /* VideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970324631EE093050053CCE8 /* VideoManager.swift */; };
 		970324661EE095760053CCE8 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970324651EE095760053CCE8 /* VideosViewController.swift */; };
 		970324681EE09B7E0053CCE8 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970324671EE09B7E0053CCE8 /* VideoTableViewCell.swift */; };
+		9708AF6B1EE9B26600A7B7F5 /* CouplesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9708AF6A1EE9B26600A7B7F5 /* CouplesTableViewController.swift */; };
+		9708AF6D1EE9B3AB00A7B7F5 /* CouplesImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9708AF6C1EE9B3AB00A7B7F5 /* CouplesImageTableViewCell.swift */; };
+		9708AF6F1EE9B3BF00A7B7F5 /* CouplesInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9708AF6E1EE9B3BF00A7B7F5 /* CouplesInformationTableViewCell.swift */; };
+		9708AF731EE9F4F700A7B7F5 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9708AF721EE9F4F700A7B7F5 /* About.storyboard */; };
 		970D02A51EE0AA8F00E703FC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970D02A41EE0AA8F00E703FC /* Alamofire.framework */; };
 		971534241EE1D04D00B613FB /* DetailVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971534231EE1D04D00B613FB /* DetailVideoViewController.swift */; };
 		972EBC601EDE621B004D1B54 /* FakeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972EBC5F1EDE621B004D1B54 /* FakeModel.swift */; };
@@ -23,7 +27,6 @@
 		973FDAB71E971D8B00425F93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 973FDAB61E971D8B00425F93 /* Assets.xcassets */; };
 		9773442A1E9ACBF2001EDB21 /* MapPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977344291E9ACBF2001EDB21 /* MapPlaceViewController.swift */; };
 		9773442C1E9EC0EA001EDB21 /* LinkedinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9773442B1E9EC0EA001EDB21 /* LinkedinViewController.swift */; };
-		978ABF781E91B45900C43931 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 978ABF771E91B45900C43931 /* About.storyboard */; };
 		97A2DEAF1E8DDC5C00A8CF3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A2DEAE1E8DDC5C00A8CF3C /* AppDelegate.swift */; };
 		97A2DEB41E8DDC5C00A8CF3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A2DEB21E8DDC5C00A8CF3C /* Main.storyboard */; };
 		97A2DEB71E8DDC5C00A8CF3C /* CCGApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 97A2DEB51E8DDC5C00A8CF3C /* CCGApp.xcdatamodeld */; };
@@ -44,6 +47,9 @@
 		97C89D2F1EDF3A4E002773E9 /* ChurchImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C89D2E1EDF3A4E002773E9 /* ChurchImageTableViewCell.swift */; };
 		97C89D311EDF3A60002773E9 /* FridayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C89D301EDF3A60002773E9 /* FridayTableViewCell.swift */; };
 		97C89D331EDF3A6A002773E9 /* SundayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C89D321EDF3A6A002773E9 /* SundayTableViewCell.swift */; };
+		97FA043E1EE8F04400717C5B /* TeenagersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FA043D1EE8F04400717C5B /* TeenagersTableViewController.swift */; };
+		97FA04401EE8F20800717C5B /* TeenagersImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FA043F1EE8F20800717C5B /* TeenagersImageTableViewCell.swift */; };
+		97FA04421EE8F21C00717C5B /* TeenagersInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FA04411EE8F21C00717C5B /* TeenagersInformationTableViewCell.swift */; };
 		E96BC5996FEC6269F265A527 /* Pods_CCGApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB261CC55425DB134933CD9 /* Pods_CCGApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +81,10 @@
 		970324631EE093050053CCE8 /* VideoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoManager.swift; sourceTree = "<group>"; };
 		970324651EE095760053CCE8 /* VideosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
 		970324671EE09B7E0053CCE8 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		9708AF6A1EE9B26600A7B7F5 /* CouplesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouplesTableViewController.swift; sourceTree = "<group>"; };
+		9708AF6C1EE9B3AB00A7B7F5 /* CouplesImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouplesImageTableViewCell.swift; sourceTree = "<group>"; };
+		9708AF6E1EE9B3BF00A7B7F5 /* CouplesInformationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouplesInformationTableViewCell.swift; sourceTree = "<group>"; };
+		9708AF721EE9F4F700A7B7F5 /* About.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = About.storyboard; path = ../../../../.Trash/About.storyboard; sourceTree = "<group>"; };
 		970D02A41EE0AA8F00E703FC /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		971534231EE1D04D00B613FB /* DetailVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVideoViewController.swift; sourceTree = "<group>"; };
 		972EBC5F1EDE621B004D1B54 /* FakeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeModel.swift; sourceTree = "<group>"; };
@@ -84,7 +94,6 @@
 		973FDAB61E971D8B00425F93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		977344291E9ACBF2001EDB21 /* MapPlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPlaceViewController.swift; sourceTree = "<group>"; };
 		9773442B1E9EC0EA001EDB21 /* LinkedinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedinViewController.swift; sourceTree = "<group>"; };
-		978ABF771E91B45900C43931 /* About.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
 		97A2DEAB1E8DDC5B00A8CF3C /* CCGApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCGApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A2DEAE1E8DDC5C00A8CF3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97A2DEB31E8DDC5C00A8CF3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -111,6 +120,9 @@
 		97C89D2E1EDF3A4E002773E9 /* ChurchImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChurchImageTableViewCell.swift; sourceTree = "<group>"; };
 		97C89D301EDF3A60002773E9 /* FridayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FridayTableViewCell.swift; sourceTree = "<group>"; };
 		97C89D321EDF3A6A002773E9 /* SundayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SundayTableViewCell.swift; sourceTree = "<group>"; };
+		97FA043D1EE8F04400717C5B /* TeenagersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeenagersTableViewController.swift; sourceTree = "<group>"; };
+		97FA043F1EE8F20800717C5B /* TeenagersImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeenagersImageTableViewCell.swift; sourceTree = "<group>"; };
+		97FA04411EE8F21C00717C5B /* TeenagersInformationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeenagersInformationTableViewCell.swift; sourceTree = "<group>"; };
 		BF9765E934FB361E10B43605 /* Pods-CCGAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCGAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCGAppTests/Pods-CCGAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D11E0639F66E2B3E359C9943 /* Pods-CCGAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCGAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCGAppUITests/Pods-CCGAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E3E1272C913CFF05B10EBB83 /* Pods-CCGAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCGAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCGAppUITests/Pods-CCGAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -178,13 +190,15 @@
 			isa = PBXGroup;
 			children = (
 				97C89D2D1EDF3A3E002773E9 /* cell */,
-				978ABF771E91B45900C43931 /* About.storyboard */,
+				9708AF721EE9F4F700A7B7F5 /* About.storyboard */,
 				977344291E9ACBF2001EDB21 /* MapPlaceViewController.swift */,
 				9773442B1E9EC0EA001EDB21 /* LinkedinViewController.swift */,
 				97C89D241EDF3058002773E9 /* WorshipTableViewController.swift */,
 				97ABDED91EE3A89200F306F5 /* JovensTableViewController.swift */,
 				97ABDEDF1EE4BE1800F306F5 /* ChurchTableViewController.swift */,
 				973B4B6A1EE8C5EC00C16CBC /* TeensTableViewController.swift */,
+				97FA043D1EE8F04400717C5B /* TeenagersTableViewController.swift */,
+				9708AF6A1EE9B26600A7B7F5 /* CouplesTableViewController.swift */,
 			);
 			name = About;
 			sourceTree = "<group>";
@@ -287,6 +301,10 @@
 				97ABDEE31EE4C54500F306F5 /* ChurchInformationTableViewCell.swift */,
 				973B4B6C1EE8CA7100C16CBC /* TeensImageTableViewCell.swift */,
 				973B4B6E1EE8CA8400C16CBC /* TeensInformationTableViewCell.swift */,
+				97FA043F1EE8F20800717C5B /* TeenagersImageTableViewCell.swift */,
+				97FA04411EE8F21C00717C5B /* TeenagersInformationTableViewCell.swift */,
+				9708AF6C1EE9B3AB00A7B7F5 /* CouplesImageTableViewCell.swift */,
+				9708AF6E1EE9B3BF00A7B7F5 /* CouplesInformationTableViewCell.swift */,
 			);
 			name = cell;
 			sourceTree = "<group>";
@@ -435,7 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97A2DEBC1E8DDC5C00A8CF3C /* LaunchScreen.storyboard in Resources */,
-				978ABF781E91B45900C43931 /* About.storyboard in Resources */,
+				9708AF731EE9F4F700A7B7F5 /* About.storyboard in Resources */,
 				9703245F1EE090820053CCE8 /* Videos.storyboard in Resources */,
 				97A2DEB41E8DDC5C00A8CF3C /* Main.storyboard in Resources */,
 				97A2DEE41E8FEC0200A8CF3C /* News.storyboard in Resources */,
@@ -606,6 +624,8 @@
 				97A2DEAF1E8DDC5C00A8CF3C /* AppDelegate.swift in Sources */,
 				97A2DEEB1E8FFA6300A8CF3C /* NewsTableViewCell.swift in Sources */,
 				970324611EE092640053CCE8 /* Video.swift in Sources */,
+				9708AF6F1EE9B3BF00A7B7F5 /* CouplesInformationTableViewCell.swift in Sources */,
+				97FA04421EE8F21C00717C5B /* TeenagersInformationTableViewCell.swift in Sources */,
 				973B4B6D1EE8CA7100C16CBC /* TeensImageTableViewCell.swift in Sources */,
 				97ABDEE01EE4BE1800F306F5 /* ChurchTableViewController.swift in Sources */,
 				973B4B6F1EE8CA8400C16CBC /* TeensInformationTableViewCell.swift in Sources */,
@@ -616,8 +636,11 @@
 				97ABDEDA1EE3A89200F306F5 /* JovensTableViewController.swift in Sources */,
 				97ABDEDE1EE3B0AC00F306F5 /* JovensInformationTableViewCell.swift in Sources */,
 				97C89D311EDF3A60002773E9 /* FridayTableViewCell.swift in Sources */,
+				9708AF6D1EE9B3AB00A7B7F5 /* CouplesImageTableViewCell.swift in Sources */,
 				97C89D2F1EDF3A4E002773E9 /* ChurchImageTableViewCell.swift in Sources */,
 				97ABDEDC1EE3AB0D00F306F5 /* JovensImageTableViewCell.swift in Sources */,
+				97FA04401EE8F20800717C5B /* TeenagersImageTableViewCell.swift in Sources */,
+				9708AF6B1EE9B26600A7B7F5 /* CouplesTableViewController.swift in Sources */,
 				972EBC601EDE621B004D1B54 /* FakeModel.swift in Sources */,
 				971534241EE1D04D00B613FB /* DetailVideoViewController.swift in Sources */,
 				97A2DEB71E8DDC5C00A8CF3C /* CCGApp.xcdatamodeld in Sources */,
@@ -626,6 +649,7 @@
 				97ABDEE41EE4C54500F306F5 /* ChurchInformationTableViewCell.swift in Sources */,
 				97ABDEE21EE4C31700F306F5 /* IgrejaImageTableViewCell.swift in Sources */,
 				970324641EE093050053CCE8 /* VideoManager.swift in Sources */,
+				97FA043E1EE8F04400717C5B /* TeenagersTableViewController.swift in Sources */,
 				970324681EE09B7E0053CCE8 /* VideoTableViewCell.swift in Sources */,
 				973B4B6B1EE8C5EC00C16CBC /* TeensTableViewController.swift in Sources */,
 			);
