@@ -18,6 +18,9 @@
 		9708AF6D1EE9B3AB00A7B7F5 /* CouplesImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9708AF6C1EE9B3AB00A7B7F5 /* CouplesImageTableViewCell.swift */; };
 		9708AF6F1EE9B3BF00A7B7F5 /* CouplesInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9708AF6E1EE9B3BF00A7B7F5 /* CouplesInformationTableViewCell.swift */; };
 		9708AF731EE9F4F700A7B7F5 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9708AF721EE9F4F700A7B7F5 /* About.storyboard */; };
+		9708AF751EEB0BF000A7B7F5 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9708AF741EEB0BF000A7B7F5 /* ContactTableViewController.swift */; };
+		9708AF771EEB0C0A00A7B7F5 /* ImageContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9708AF761EEB0C0A00A7B7F5 /* ImageContactTableViewCell.swift */; };
+		9708AF791EEB0C1A00A7B7F5 /* InformationContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9708AF781EEB0C1A00A7B7F5 /* InformationContactTableViewCell.swift */; };
 		970D02A51EE0AA8F00E703FC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970D02A41EE0AA8F00E703FC /* Alamofire.framework */; };
 		971534241EE1D04D00B613FB /* DetailVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971534231EE1D04D00B613FB /* DetailVideoViewController.swift */; };
 		972EBC601EDE621B004D1B54 /* FakeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972EBC5F1EDE621B004D1B54 /* FakeModel.swift */; };
@@ -85,6 +88,9 @@
 		9708AF6C1EE9B3AB00A7B7F5 /* CouplesImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouplesImageTableViewCell.swift; sourceTree = "<group>"; };
 		9708AF6E1EE9B3BF00A7B7F5 /* CouplesInformationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouplesInformationTableViewCell.swift; sourceTree = "<group>"; };
 		9708AF721EE9F4F700A7B7F5 /* About.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = About.storyboard; path = ../../../../.Trash/About.storyboard; sourceTree = "<group>"; };
+		9708AF741EEB0BF000A7B7F5 /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
+		9708AF761EEB0C0A00A7B7F5 /* ImageContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageContactTableViewCell.swift; sourceTree = "<group>"; };
+		9708AF781EEB0C1A00A7B7F5 /* InformationContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationContactTableViewCell.swift; sourceTree = "<group>"; };
 		970D02A41EE0AA8F00E703FC /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		971534231EE1D04D00B613FB /* DetailVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVideoViewController.swift; sourceTree = "<group>"; };
 		972EBC5F1EDE621B004D1B54 /* FakeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeModel.swift; sourceTree = "<group>"; };
@@ -199,6 +205,7 @@
 				973B4B6A1EE8C5EC00C16CBC /* TeensTableViewController.swift */,
 				97FA043D1EE8F04400717C5B /* TeenagersTableViewController.swift */,
 				9708AF6A1EE9B26600A7B7F5 /* CouplesTableViewController.swift */,
+				9708AF741EEB0BF000A7B7F5 /* ContactTableViewController.swift */,
 			);
 			name = About;
 			sourceTree = "<group>";
@@ -305,6 +312,8 @@
 				97FA04411EE8F21C00717C5B /* TeenagersInformationTableViewCell.swift */,
 				9708AF6C1EE9B3AB00A7B7F5 /* CouplesImageTableViewCell.swift */,
 				9708AF6E1EE9B3BF00A7B7F5 /* CouplesInformationTableViewCell.swift */,
+				9708AF761EEB0C0A00A7B7F5 /* ImageContactTableViewCell.swift */,
+				9708AF781EEB0C1A00A7B7F5 /* InformationContactTableViewCell.swift */,
 			);
 			name = cell;
 			sourceTree = "<group>";
@@ -628,7 +637,9 @@
 				97FA04421EE8F21C00717C5B /* TeenagersInformationTableViewCell.swift in Sources */,
 				973B4B6D1EE8CA7100C16CBC /* TeensImageTableViewCell.swift in Sources */,
 				97ABDEE01EE4BE1800F306F5 /* ChurchTableViewController.swift in Sources */,
+				9708AF751EEB0BF000A7B7F5 /* ContactTableViewController.swift in Sources */,
 				973B4B6F1EE8CA8400C16CBC /* TeensInformationTableViewCell.swift in Sources */,
+				9708AF771EEB0C0A00A7B7F5 /* ImageContactTableViewCell.swift in Sources */,
 				97A2DEE11E8FE7FB00A8CF3C /* News.swift in Sources */,
 				97C89D331EDF3A6A002773E9 /* SundayTableViewCell.swift in Sources */,
 				9773442C1E9EC0EA001EDB21 /* LinkedinViewController.swift in Sources */,
@@ -644,6 +655,7 @@
 				972EBC601EDE621B004D1B54 /* FakeModel.swift in Sources */,
 				971534241EE1D04D00B613FB /* DetailVideoViewController.swift in Sources */,
 				97A2DEB71E8DDC5C00A8CF3C /* CCGApp.xcdatamodeld in Sources */,
+				9708AF791EEB0C1A00A7B7F5 /* InformationContactTableViewCell.swift in Sources */,
 				970324661EE095760053CCE8 /* VideosViewController.swift in Sources */,
 				97C89D251EDF3058002773E9 /* WorshipTableViewController.swift in Sources */,
 				97ABDEE41EE4C54500F306F5 /* ChurchInformationTableViewCell.swift in Sources */,
