@@ -9,24 +9,28 @@
 import UIKit
 import QuickLook
 
-class NewsTableViewController: UITableViewController, QLPreviewControllerDataSource {
+class NewsTableViewController: UITableViewController, QLPreviewControllerDataSource, NewspaperManagerDelegate {
     
-    var allNews = [News]()
+    var allNews = [Newspaper]()
+    var pdf = Data()
+    let newspaperManager = NewspaperManager()
     var refresher : UIRefreshControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Notícias"
         
+        self.newspaperManager.delegate = self
+        
+        newspaperManager.getNewspapers()
         refresher  = UIRefreshControl ()
         refresher.attributedTitle = NSAttributedString(string: "Deslize para atualizar")
-        refresher.tintColor = UIColor(red: 74.0/255.0, green: 140.0/255.0, blue: 223.0/255.0, alpha: 1.0)
+        refresher.tintColor = UIColor.init(red: 93.0/255.0, green: 161.0/255.0, blue: 226.0/255.0, alpha: 0.8)
+        refresher.addTarget(self, action: #selector(NewsTableViewController.updateNewspaperData), for: .valueChanged)
+      
         self.tableView.addSubview(refresher)
+        tableView.sendSubview(toBack: refresher)
         
-        
-        
-        
-        self.allNews = FakeModel.sharedInstance.allNews
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -58,7 +62,7 @@ class NewsTableViewController: UITableViewController, QLPreviewControllerDataSou
         let cellIdentifier = "Cell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! NewsTableViewCell
         
-        cell.titleCell.text = allNews[indexPath.row].title
+        cell.titleCell.text = allNews[indexPath.row].name
         let date = allNews[indexPath.row].date
         let calendar = Calendar.current
         
@@ -70,29 +74,55 @@ class NewsTableViewController: UITableViewController, QLPreviewControllerDataSou
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.newspaperManager.getPDF(self.allNews[indexPath.row])
+    }
+    
     //MARK: QuickLook DataSources
     
     func numberOfPreviewItems(in controller: QLPreviewController) -> Int{
-        return allNews.count
+        return 1
     }
-    
-    
-    //MARK: Funcao Select
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let previewPdf = QLPreviewController()
-        previewPdf.dataSource = self
-        previewPdf.currentPreviewItemIndex = indexPath.row
-        show(previewPdf, sender: nil)
-        
-        refresher.endRefreshing()
-    }
-    
     
     func previewController(_ controller: QLPreviewController, previewItemAt index: Int) -> QLPreviewItem{
-        let filePath = allNews[index].url
-        
-        return filePath!as  QLPreviewItem
+        let filePath = self.allNews[(tableView.indexPathForSelectedRow?.row)!].urlFile
+
+        return filePath! as QLPreviewItem
     }
+    
+    // Mark: Newspaper Manager Delegate
+    
+    func dataReady() {
+        self.allNews = self.newspaperManager.newspapers
+        self.allNews = allNews.sorted {$0.date! > $1.date!}
+        self.tableView.reloadData()
+        self.refresher.endRefreshing()
+    }
+    
+    func pdfReady(newspaper: Newspaper) {
+        self.pdf = self.newspaperManager.pdf
+        
+        if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+            let path = dir.appendingPathComponent(newspaper.fileName!)
+            newspaper.urlFile = path
+            do {
+                try self.pdf.write(to: path)
+            } catch {
+                print("Erro - salvando PDF")
+            }
+        }
+        
+        let previewPdf = QLPreviewController()
+        previewPdf.dataSource = self
+        self.navigationController?.pushViewController(previewPdf, animated: true)
+    }
+    // Mark: UIRefreshControl methods
+    
+    func updateNewspaperData() {
+        self.newspaperManager.getNewspapers()
+        self.tableView.reloadData()
+    }
+
     
     
     

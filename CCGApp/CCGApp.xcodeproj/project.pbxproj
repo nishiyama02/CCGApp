@@ -21,6 +21,8 @@
 		9708AF751EEB0BF000A7B7F5 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9708AF741EEB0BF000A7B7F5 /* ContactTableViewController.swift */; };
 		9708AF771EEB0C0A00A7B7F5 /* ImageContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9708AF761EEB0C0A00A7B7F5 /* ImageContactTableViewCell.swift */; };
 		9708AF791EEB0C1A00A7B7F5 /* InformationContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9708AF781EEB0C1A00A7B7F5 /* InformationContactTableViewCell.swift */; };
+		9708AF7D1EEB8B6C00A7B7F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9708AF7C1EEB8B6C00A7B7F5 /* GoogleService-Info.plist */; };
+		9708AF7F1EEB998500A7B7F5 /* NewspaperManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9708AF7E1EEB998500A7B7F5 /* NewspaperManager.swift */; };
 		970D02A51EE0AA8F00E703FC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970D02A41EE0AA8F00E703FC /* Alamofire.framework */; };
 		971534241EE1D04D00B613FB /* DetailVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971534231EE1D04D00B613FB /* DetailVideoViewController.swift */; };
 		972EBC601EDE621B004D1B54 /* FakeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972EBC5F1EDE621B004D1B54 /* FakeModel.swift */; };
@@ -36,7 +38,7 @@
 		97A2DEBC1E8DDC5C00A8CF3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A2DEBA1E8DDC5C00A8CF3C /* LaunchScreen.storyboard */; };
 		97A2DEC71E8DDC5C00A8CF3C /* CCGAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A2DEC61E8DDC5C00A8CF3C /* CCGAppTests.swift */; };
 		97A2DED21E8DDC5C00A8CF3C /* CCGAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A2DED11E8DDC5C00A8CF3C /* CCGAppUITests.swift */; };
-		97A2DEE11E8FE7FB00A8CF3C /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A2DEE01E8FE7FB00A8CF3C /* News.swift */; };
+		97A2DEE11E8FE7FB00A8CF3C /* Newspaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A2DEE01E8FE7FB00A8CF3C /* Newspaper.swift */; };
 		97A2DEE41E8FEC0200A8CF3C /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A2DEE31E8FEC0200A8CF3C /* News.storyboard */; };
 		97A2DEE61E8FEEA100A8CF3C /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A2DEE51E8FEEA100A8CF3C /* NewsTableViewController.swift */; };
 		97A2DEEB1E8FFA6300A8CF3C /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A2DEEA1E8FFA6300A8CF3C /* NewsTableViewCell.swift */; };
@@ -91,6 +93,8 @@
 		9708AF741EEB0BF000A7B7F5 /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
 		9708AF761EEB0C0A00A7B7F5 /* ImageContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageContactTableViewCell.swift; sourceTree = "<group>"; };
 		9708AF781EEB0C1A00A7B7F5 /* InformationContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationContactTableViewCell.swift; sourceTree = "<group>"; };
+		9708AF7C1EEB8B6C00A7B7F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9708AF7E1EEB998500A7B7F5 /* NewspaperManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewspaperManager.swift; sourceTree = "<group>"; };
 		970D02A41EE0AA8F00E703FC /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		971534231EE1D04D00B613FB /* DetailVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVideoViewController.swift; sourceTree = "<group>"; };
 		972EBC5F1EDE621B004D1B54 /* FakeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeModel.swift; sourceTree = "<group>"; };
@@ -112,7 +116,7 @@
 		97A2DECD1E8DDC5C00A8CF3C /* CCGAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCGAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A2DED11E8DDC5C00A8CF3C /* CCGAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCGAppUITests.swift; sourceTree = "<group>"; };
 		97A2DED31E8DDC5C00A8CF3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		97A2DEE01E8FE7FB00A8CF3C /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		97A2DEE01E8FE7FB00A8CF3C /* Newspaper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Newspaper.swift; sourceTree = "<group>"; };
 		97A2DEE31E8FEC0200A8CF3C /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
 		97A2DEE51E8FEEA100A8CF3C /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 		97A2DEEA1E8FFA6300A8CF3C /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
@@ -180,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				970324631EE093050053CCE8 /* VideoManager.swift */,
+				9708AF7E1EEB998500A7B7F5 /* NewspaperManager.swift */,
 			);
 			name = Manager;
 			sourceTree = "<group>";
@@ -265,7 +270,7 @@
 		97A2DEDF1E8FE79900A8CF3C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				97A2DEE01E8FE7FB00A8CF3C /* News.swift */,
+				97A2DEE01E8FE7FB00A8CF3C /* Newspaper.swift */,
 				970324601EE092640053CCE8 /* Video.swift */,
 			);
 			name = Models;
@@ -290,6 +295,7 @@
 				97A2DEBA1E8DDC5C00A8CF3C /* LaunchScreen.storyboard */,
 				973FDAB61E971D8B00425F93 /* Assets.xcassets */,
 				97A2DEB51E8DDC5C00A8CF3C /* CCGApp.xcdatamodeld */,
+				9708AF7C1EEB8B6C00A7B7F5 /* GoogleService-Info.plist */,
 				97A2DEBD1E8DDC5C00A8CF3C /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -467,6 +473,7 @@
 				97A2DEB41E8DDC5C00A8CF3C /* Main.storyboard in Resources */,
 				97A2DEE41E8FEC0200A8CF3C /* News.storyboard in Resources */,
 				973FDAB71E971D8B00425F93 /* Assets.xcassets in Resources */,
+				9708AF7D1EEB8B6C00A7B7F5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -638,9 +645,10 @@
 				973B4B6D1EE8CA7100C16CBC /* TeensImageTableViewCell.swift in Sources */,
 				97ABDEE01EE4BE1800F306F5 /* ChurchTableViewController.swift in Sources */,
 				9708AF751EEB0BF000A7B7F5 /* ContactTableViewController.swift in Sources */,
+				9708AF7F1EEB998500A7B7F5 /* NewspaperManager.swift in Sources */,
 				973B4B6F1EE8CA8400C16CBC /* TeensInformationTableViewCell.swift in Sources */,
 				9708AF771EEB0C0A00A7B7F5 /* ImageContactTableViewCell.swift in Sources */,
-				97A2DEE11E8FE7FB00A8CF3C /* News.swift in Sources */,
+				97A2DEE11E8FE7FB00A8CF3C /* Newspaper.swift in Sources */,
 				97C89D331EDF3A6A002773E9 /* SundayTableViewCell.swift in Sources */,
 				9773442C1E9EC0EA001EDB21 /* LinkedinViewController.swift in Sources */,
 				9773442A1E9ACBF2001EDB21 /* MapPlaceViewController.swift in Sources */,
@@ -825,6 +833,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Nishi.CCGApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -843,6 +852,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Nishi.CCGApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
