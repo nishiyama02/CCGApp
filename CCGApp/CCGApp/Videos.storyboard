@@ -16,7 +16,7 @@
                 <navigationController id="3OY-gU-Tug" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Palavras" image="PalavrasNotSelected" selectedImage="PalavrasSelected" id="mP5-6y-Xos"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="WZE-Wa-lop">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="WZE-Wa-lop">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -93,47 +93,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZ9-jI-HZi">
-                                <rect key="frame" x="142" y="257" width="90" height="90"/>
-                                <subviews>
-                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S5P-q1-inO">
-                                        <rect key="frame" x="1" y="0.0" width="90" height="90"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="GUW-1M-eDO">
-                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <subviews>
-                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="2qu-tF-lxQ">
-                                                    <rect key="frame" x="27" y="26" width="37" height="37"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="37" id="Kg5-Yw-UIF"/>
-                                                        <constraint firstAttribute="width" constant="37" id="UPw-oY-lxh"/>
-                                                    </constraints>
-                                                </activityIndicatorView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="2qu-tF-lxQ" firstAttribute="centerX" secondItem="GUW-1M-eDO" secondAttribute="centerX" id="XPT-mr-fen"/>
-                                                <constraint firstItem="2qu-tF-lxQ" firstAttribute="centerY" secondItem="GUW-1M-eDO" secondAttribute="centerY" id="yw7-qr-fae"/>
-                                            </constraints>
-                                        </view>
-                                        <blurEffect style="light"/>
-                                    </visualEffectView>
-                                </subviews>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="0Db-TY-t1V"/>
-                                    <constraint firstAttribute="bottom" secondItem="S5P-q1-inO" secondAttribute="bottom" id="8vZ-C2-O2s"/>
-                                    <constraint firstAttribute="trailing" secondItem="S5P-q1-inO" secondAttribute="trailing" constant="-1" id="Z3o-rY-agR"/>
-                                    <constraint firstItem="S5P-q1-inO" firstAttribute="leading" secondItem="dZ9-jI-HZi" secondAttribute="leading" constant="1" id="kA6-kC-M7t"/>
-                                    <constraint firstAttribute="width" constant="90" id="lzA-Lb-QzT"/>
-                                    <constraint firstItem="S5P-q1-inO" firstAttribute="top" secondItem="dZ9-jI-HZi" secondAttribute="top" id="y0Q-lP-ihO"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -141,14 +100,10 @@
                             <constraint firstAttribute="trailing" secondItem="JN1-zc-DX9" secondAttribute="trailing" id="CsZ-CX-fhl"/>
                             <constraint firstItem="JN1-zc-DX9" firstAttribute="top" secondItem="ynb-IH-agt" secondAttribute="bottom" id="ESX-Tn-SkO"/>
                             <constraint firstItem="BV3-sC-dws" firstAttribute="top" secondItem="JN1-zc-DX9" secondAttribute="bottom" id="H8q-ix-VWg"/>
-                            <constraint firstItem="dZ9-jI-HZi" firstAttribute="centerX" secondItem="GPV-SZ-IpT" secondAttribute="centerX" id="Rw4-jX-Jwr"/>
-                            <constraint firstItem="dZ9-jI-HZi" firstAttribute="centerY" secondItem="GPV-SZ-IpT" secondAttribute="centerY" id="ZpZ-Ie-4oF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Palavras" id="q6t-1T-52x"/>
                     <connections>
-                        <outlet property="activityIndicator" destination="2qu-tF-lxQ" id="5Fm-nw-Aea"/>
-                        <outlet property="activityView" destination="dZ9-jI-HZi" id="GQ2-Te-Lq3"/>
                         <outlet property="tableView" destination="JN1-zc-DX9" id="kBL-PO-MgU"/>
                     </connections>
                 </viewController>

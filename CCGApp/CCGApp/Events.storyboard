@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iGt-9v-6C1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Eventos-->
+        <scene sceneID="diT-31-xJh">
+            <objects>
+                <navigationController id="iGt-9v-6C1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Eventos" image="calendarNotSelected" selectedImage="calendarSelected" id="o4j-yP-iyK"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="87W-vM-YWy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.2901960784" green="0.54901960780000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FmM-gi-oMH" kind="relationship" relationship="rootViewController" id="IHk-xb-F4f"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yUG-vh-VmE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1007" y="107"/>
+        </scene>
+        <!--Events View Controller-->
+        <scene sceneID="Ecf-TQ-fPj">
+            <objects>
+                <viewController id="FmM-gi-oMH" customClass="EventsViewController" customModule="CCGApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t6y-5p-nKL"/>
+                        <viewControllerLayoutGuide type="bottom" id="fs9-Gz-tCZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vml-w3-Z7L">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Nc-tK-VAO" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="4wm-UN-cKX"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderType">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="allowsSelection" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="scrollEnabled" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="headerTitleColor">
+                                        <color key="value" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="weekdayTextColor">
+                                        <color key="value" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleDefaultColor">
+                                        <color key="value" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titlePlaceholderColor">
+                                        <color key="value" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleWeekendColor">
+                                        <color key="value" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="subtitleDefaultColor">
+                                        <color key="value" red="0.2901960784" green="0.54901960780000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectionColor">
+                                        <color key="value" red="0.2901960784" green="0.54901960780000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="todayColor">
+                                        <color key="value" red="1" green="0.28627450980000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="subtitleSelectionColor">
+                                        <color key="value" red="0.2901960784" green="0.54901960780000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="subtitleWeekendColor">
+                                        <color key="value" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fakedSelectedDay">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="weekdayTextSize">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="headerTitleTextSize">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="titleTextSize">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="useVeryShortWeekdaySymbols" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fakeSubtitles" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fakeEventDots" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="firstWeekday">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="pagingEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PjK-RG-TNj">
+                                <rect key="frame" x="0.0" y="402" width="375" height="152"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="eventCell" rowHeight="100" id="zMK-2v-sPf" customClass="EventsTableViewCell" customModule="CCGApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zMK-2v-sPf" id="Sjw-Ny-zJU">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comemoração do Mundial do Palmeiras" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9L0-9U-AvN">
+                                                    <rect key="frame" x="80" y="4" width="287" height="51"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="51" id="Dgg-GD-1NX"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                    <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cec-QC-Ph7">
+                                                    <rect key="frame" x="64" y="8" width="2" height="84"/>
+                                                    <color key="backgroundColor" red="0.2901960784" green="0.54901960780000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="84" id="SrT-zq-PFl"/>
+                                                        <constraint firstAttribute="width" constant="2" id="xPo-gb-m1l"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rua Arqueologo Mario Cardoso, 125" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvx-1h-KJC">
+                                                    <rect key="frame" x="80" y="52" width="287" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="WOp-0Q-7CE"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                    <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lK-p8-pfo">
+                                                    <rect key="frame" x="8" y="40" width="47" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="47" id="4Bx-3d-loU"/>
+                                                        <constraint firstAttribute="height" constant="21" id="aOv-iz-6X3"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                                    <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="topMargin" secondItem="cec-QC-Ph7" secondAttribute="top" id="1IL-XM-Nkq"/>
+                                                <constraint firstItem="pvx-1h-KJC" firstAttribute="leading" secondItem="cec-QC-Ph7" secondAttribute="trailing" constant="14" id="6EH-Pl-s8Z"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="pvx-1h-KJC" secondAttribute="trailing" id="AtI-oz-abZ"/>
+                                                <constraint firstItem="9L0-9U-AvN" firstAttribute="leading" secondItem="cec-QC-Ph7" secondAttribute="trailing" constant="14" id="FVR-dc-Gmr"/>
+                                                <constraint firstItem="3lK-p8-pfo" firstAttribute="top" secondItem="Sjw-Ny-zJU" secondAttribute="topMargin" constant="32" id="MAb-V3-Z7a"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="9L0-9U-AvN" secondAttribute="trailing" id="eV0-zU-qYy"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="3lK-p8-pfo" secondAttribute="leading" id="lqv-vg-yD3"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="pvx-1h-KJC" secondAttribute="bottom" constant="-8.5" id="mQa-9Z-gAE"/>
+                                                <constraint firstItem="9L0-9U-AvN" firstAttribute="top" secondItem="Sjw-Ny-zJU" secondAttribute="topMargin" constant="-4" id="rrA-OA-QbB"/>
+                                                <constraint firstItem="cec-QC-Ph7" firstAttribute="leading" secondItem="3lK-p8-pfo" secondAttribute="trailing" constant="9" id="xxh-Xy-dEm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateTimeLabel" destination="3lK-p8-pfo" id="ksq-lI-rdu"/>
+                                            <outlet property="nameEventLabel" destination="9L0-9U-AvN" id="qG9-3U-dDL"/>
+                                            <outlet property="placeLabel" destination="pvx-1h-KJC" id="ynG-U4-YvR"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eventos do dia 24/07" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MgT-iz-nqJ">
+                                <rect key="frame" x="16" y="373" width="343" height="25"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="PjK-RG-TNj" secondAttribute="trailing" constant="-16" id="13m-un-dWM"/>
+                            <constraint firstAttribute="trailing" secondItem="0Nc-tK-VAO" secondAttribute="trailing" id="GCv-Q0-xjM"/>
+                            <constraint firstItem="PjK-RG-TNj" firstAttribute="leading" secondItem="Vml-w3-Z7L" secondAttribute="leadingMargin" constant="-16" id="J19-7t-qkf"/>
+                            <constraint firstItem="PjK-RG-TNj" firstAttribute="top" secondItem="MgT-iz-nqJ" secondAttribute="bottom" constant="4" id="MJL-R1-NXj"/>
+                            <constraint firstItem="MgT-iz-nqJ" firstAttribute="top" secondItem="0Nc-tK-VAO" secondAttribute="bottom" constant="23" id="NCm-qo-DLm"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="MgT-iz-nqJ" secondAttribute="leading" id="V0k-8L-OJ1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MgT-iz-nqJ" secondAttribute="trailing" id="Y6R-bX-mB0"/>
+                            <constraint firstItem="PjK-RG-TNj" firstAttribute="top" secondItem="MgT-iz-nqJ" secondAttribute="bottom" constant="4" id="bSm-Al-5o0"/>
+                            <constraint firstItem="0Nc-tK-VAO" firstAttribute="top" secondItem="t6y-5p-nKL" secondAttribute="bottom" id="jBN-be-pzW"/>
+                            <constraint firstItem="fs9-Gz-tCZ" firstAttribute="top" secondItem="PjK-RG-TNj" secondAttribute="bottom" id="oXr-PM-lUX"/>
+                            <constraint firstItem="0Nc-tK-VAO" firstAttribute="leading" secondItem="Vml-w3-Z7L" secondAttribute="leading" id="sMF-2E-lA1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8UC-mJ-ljq"/>
+                    <connections>
+                        <outlet property="calendar" destination="0Nc-tK-VAO" id="IZ9-7z-WoK"/>
+                        <outlet property="calendarHeightConstraint" destination="4wm-UN-cKX" id="TCl-0q-4a7"/>
+                        <outlet property="dateTitleLabel" destination="MgT-iz-nqJ" id="tkS-CG-4OK"/>
+                        <outlet property="tableView" destination="PjK-RG-TNj" id="Nz5-35-a9q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="exd-vs-0Jp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-298.39999999999998" y="106.59670164917542"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calendarNotSelected" width="25" height="25"/>
+        <image name="calendarSelected" width="25" height="25"/>
+    </resources>
+</document>

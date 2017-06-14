@@ -7,16 +7,14 @@
 //
 
 import UIKit
+import ProgressHUD
 
-class VideosViewController: UIViewController, UITableViewDataSource,UITableViewDelegate, VideoManagerDelegate {
+class VideosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, VideoManagerDelegate {
     
     var videos: [Video] = [Video]()
     let videoManager = VideoManager()
 
-    @IBOutlet weak var activityView: UIView!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,9 +24,8 @@ class VideosViewController: UIViewController, UITableViewDataSource,UITableViewD
         
         self.videoManager.delegate = self
         
-        self.activityView.isHidden = false
         self.tableView.isHidden = true
-        self.activityIndicator.startAnimating()
+        ProgressHUD.show("Carregando...", interaction: false)
         
         self.videoManager.getVideos()
     }
@@ -98,10 +95,8 @@ class VideosViewController: UIViewController, UITableViewDataSource,UITableViewD
     func dataReady() {
         self.videos = self.videoManager.videos
         self.tableView.reloadData()
-        self.activityView.isHidden = true
         self.tableView.isHidden = false
-        self.activityIndicator.stopAnimating()
-        
+        ProgressHUD.dismiss()
     }
 
     /*

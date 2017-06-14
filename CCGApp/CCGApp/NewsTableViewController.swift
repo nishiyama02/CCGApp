@@ -8,6 +8,7 @@
 
 import UIKit
 import QuickLook
+import ProgressHUD
 
 class NewsTableViewController: UITableViewController, QLPreviewControllerDataSource, NewspaperManagerDelegate {
     
@@ -23,6 +24,8 @@ class NewsTableViewController: UITableViewController, QLPreviewControllerDataSou
         self.newspaperManager.delegate = self
         
         newspaperManager.getNewspapers()
+        ProgressHUD.show("Carregando...", interaction: false)
+        
         refresher  = UIRefreshControl ()
         refresher.attributedTitle = NSAttributedString(string: "Deslize para atualizar")
         refresher.tintColor = UIColor.init(red: 93.0/255.0, green: 161.0/255.0, blue: 226.0/255.0, alpha: 0.8)
@@ -76,6 +79,7 @@ class NewsTableViewController: UITableViewController, QLPreviewControllerDataSou
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.newspaperManager.getPDF(self.allNews[indexPath.row])
+        ProgressHUD.show("Carregamento...", interaction: false)
     }
     
     //MARK: QuickLook DataSources
@@ -97,6 +101,7 @@ class NewsTableViewController: UITableViewController, QLPreviewControllerDataSou
         self.allNews = allNews.sorted {$0.date! > $1.date!}
         self.tableView.reloadData()
         self.refresher.endRefreshing()
+        ProgressHUD.dismiss()
     }
     
     func pdfReady(newspaper: Newspaper) {
@@ -112,6 +117,8 @@ class NewsTableViewController: UITableViewController, QLPreviewControllerDataSou
             }
         }
         
+        ProgressHUD.dismiss()
+        
         let previewPdf = QLPreviewController()
         previewPdf.dataSource = self
         self.navigationController?.pushViewController(previewPdf, animated: true)
@@ -122,9 +129,6 @@ class NewsTableViewController: UITableViewController, QLPreviewControllerDataSou
         self.newspaperManager.getNewspapers()
         self.tableView.reloadData()
     }
-
-    
-    
     
     /*
      // Override to support conditional editing of the table view.
