@@ -80,7 +80,7 @@
                                         <color key="value" red="0.2901960784" green="0.54901960780000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="todayColor">
-                                        <color key="value" red="1" green="0.28627450980000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.44255081431263715" green="0.89999479055404663" blue="0.48089072873918209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="subtitleSelectionColor">
                                         <color key="value" red="0.2901960784" green="0.54901960780000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -185,20 +185,32 @@
                                 <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nenhum evento marcado ainda :(" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gH4-JK-A1W">
+                                <rect key="frame" x="16" y="455" width="343" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="zQT-UJ-7RU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="PjK-RG-TNj" secondAttribute="trailing" constant="-16" id="13m-un-dWM"/>
                             <constraint firstAttribute="trailing" secondItem="0Nc-tK-VAO" secondAttribute="trailing" id="GCv-Q0-xjM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gH4-JK-A1W" secondAttribute="trailing" id="IlI-JY-lUF"/>
                             <constraint firstItem="PjK-RG-TNj" firstAttribute="leading" secondItem="Vml-w3-Z7L" secondAttribute="leadingMargin" constant="-16" id="J19-7t-qkf"/>
                             <constraint firstItem="PjK-RG-TNj" firstAttribute="top" secondItem="MgT-iz-nqJ" secondAttribute="bottom" constant="4" id="MJL-R1-NXj"/>
                             <constraint firstItem="MgT-iz-nqJ" firstAttribute="top" secondItem="0Nc-tK-VAO" secondAttribute="bottom" constant="23" id="NCm-qo-DLm"/>
                             <constraint firstAttribute="leadingMargin" secondItem="MgT-iz-nqJ" secondAttribute="leading" id="V0k-8L-OJ1"/>
                             <constraint firstAttribute="trailingMargin" secondItem="MgT-iz-nqJ" secondAttribute="trailing" id="Y6R-bX-mB0"/>
+                            <constraint firstItem="gH4-JK-A1W" firstAttribute="top" secondItem="MgT-iz-nqJ" secondAttribute="bottom" constant="57" id="aPg-xT-hZ5"/>
                             <constraint firstItem="PjK-RG-TNj" firstAttribute="top" secondItem="MgT-iz-nqJ" secondAttribute="bottom" constant="4" id="bSm-Al-5o0"/>
                             <constraint firstItem="0Nc-tK-VAO" firstAttribute="top" secondItem="t6y-5p-nKL" secondAttribute="bottom" id="jBN-be-pzW"/>
                             <constraint firstItem="fs9-Gz-tCZ" firstAttribute="top" secondItem="PjK-RG-TNj" secondAttribute="bottom" id="oXr-PM-lUX"/>
                             <constraint firstItem="0Nc-tK-VAO" firstAttribute="leading" secondItem="Vml-w3-Z7L" secondAttribute="leading" id="sMF-2E-lA1"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="gH4-JK-A1W" secondAttribute="leading" id="sjQ-Be-7Ry"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8UC-mJ-ljq"/>
@@ -206,6 +218,7 @@
                         <outlet property="calendar" destination="0Nc-tK-VAO" id="IZ9-7z-WoK"/>
                         <outlet property="calendarHeightConstraint" destination="4wm-UN-cKX" id="TCl-0q-4a7"/>
                         <outlet property="dateTitleLabel" destination="MgT-iz-nqJ" id="tkS-CG-4OK"/>
+                        <outlet property="noEventsLabel" destination="gH4-JK-A1W" id="zqF-hg-Szz"/>
                         <outlet property="tableView" destination="PjK-RG-TNj" id="Nz5-35-a9q"/>
                     </connections>
                 </viewController>

@@ -21,6 +21,7 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var calendarHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var dateTitleLabel: UILabel!
+    @IBOutlet weak var noEventsLabel: UILabel!
     
     fileprivate let gregorian = Calendar(identifier: .gregorian)
     fileprivate let formatter: DateFormatter = {
@@ -51,15 +52,19 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         self.eventsManager.delegate = self
         
-        self.eventsManager.getEvents()
-        ProgressHUD.show("Carregando...")
-        
         self.view.addGestureRecognizer(self.scopeGesture)
         self.tableView.panGestureRecognizer.require(toFail: self.scopeGesture)
         self.calendar.scope = .month
         
         self.calendar.allowsSelection = true
         
+        if !Reachability().networkVerification() {
+            ProgressHUD.showError("Sem Conexão", interaction: false)
+            return
+        }
+        
+        self.eventsManager.getEvents()
+        ProgressHUD.show("Carregando...")        
     }
     
     //MARK: UIGestureRecognizerDelegate
@@ -94,6 +99,23 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         print("Selecionei uma data")
         self.filterEvents(date: date)
+    }
+    
+    func calendar(_ calendar: FSCalendar, numberOfEventsFor date: Date) -> Int {
+        let calendar = Calendar.current
+        let day1 = calendar.component(.day, from: date)
+        let month1 = calendar.component(.month, from: date)
+        let year1 = calendar.component(.year, from: date)
+        
+        for item in allEvents {
+            let day2 = calendar.component(.day, from: item.date!)
+            let month2 = calendar.component(.month, from: item.date!)
+            let year2 = calendar.component(.year, from: item.date!)
+            if (day1 == day2) && (month1 == month2) && (year1 == year2) {
+                return 1
+            }
+        }
+        return 0
     }
     
     
@@ -137,16 +159,26 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let calendar = Calendar.current
         let day1 = calendar.component(.day, from: date)
         let month1 = calendar.component(.month, from: date)
+        let year1 = calendar.component(.year, from: date)
         
         self.dateTitleLabel.text = "Eventos do dia \(day1)/\(month1)"
         
         for item in allEvents {
             let day2 = calendar.component(.day, from: item.date!)
             let month2 = calendar.component(.month, from: item.date!)
-            if (day1 == day2) && (month1 == month2) {
+            let year2 = calendar.component(.year, from: item.date!)
+            if (day1 == day2) && (month1 == month2) && (year1 == year2) {
                 currentEvents.append(item)
+                self.tableView.isHidden = false
+                self.noEventsLabel.isHidden = true
             }
         }
+        
+        if currentEvents.count == 0 {
+            self.noEventsLabel.isHidden = false
+            self.tableView.isHidden = true
+        }
+        
         self.tableView.reloadData()
     }
     

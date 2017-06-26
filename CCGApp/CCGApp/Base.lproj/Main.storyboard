@@ -27,6 +27,7 @@
                     <connections>
                         <segue destination="TZD-FQ-4N8" kind="relationship" relationship="viewControllers" id="Azf-r4-ElL"/>
                         <segue destination="joy-gx-5Ef" kind="relationship" relationship="viewControllers" id="56V-PC-e6m"/>
+                        <segue destination="xwU-vf-R62" kind="relationship" relationship="viewControllers" id="CnE-Yo-qNH"/>
                         <segue destination="REW-P1-rqB" kind="relationship" relationship="viewControllers" id="ysQ-s0-j1f"/>
                         <segue destination="XX2-mY-uDx" kind="relationship" relationship="viewControllers" id="DnH-pz-qSZ"/>
                     </connections>
@@ -75,6 +76,16 @@
             </objects>
             <point key="canvasLocation" x="-36" y="218"/>
         </scene>
+        <!--Bible-->
+        <scene sceneID="0hY-ty-5G4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Bible" id="xwU-vf-R62" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Bíblia" image="bibleNotSelected" selectedImage="bibleSelected" id="YkS-Z6-N0Z"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p8L-oK-u4F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-37" y="336"/>
+        </scene>
     </scenes>
     <resources>
         <image name="NewsNotSelected" width="25" height="25"/>
@@ -83,7 +94,9 @@
         <image name="PalavrasSelected" width="25" height="25"/>
         <image name="SaibaMaisNotSelected" width="25" height="25"/>
         <image name="SaibaMaisSelected" width="25" height="25"/>
+        <image name="bibleNotSelected" width="25" height="25"/>
+        <image name="bibleSelected" width="25" height="25"/>
         <image name="calendarNotSelected" width="25" height="25"/>
-        <image name="calendarSelected" width="37" height="37"/>
+        <image name="calendarSelected" width="25" height="25"/>
     </resources>
 </document>

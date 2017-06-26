@@ -24,10 +24,15 @@ class VideosViewController: UIViewController, UITableViewDataSource, UITableView
         
         self.videoManager.delegate = self
         
-        self.tableView.isHidden = true
-        ProgressHUD.show("Carregando...", interaction: false)
+        self.tableView.isHidden = true    
+        
+        if !Reachability().networkVerification() {
+            ProgressHUD.showError("Sem Conexão", interaction: false)
+            return
+        }
         
         self.videoManager.getVideos()
+        ProgressHUD.show("Carregando...", interaction: false)
     }
 
     override func didReceiveMemoryWarning() {

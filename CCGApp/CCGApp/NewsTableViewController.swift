@@ -20,9 +20,13 @@ class NewsTableViewController: UITableViewController, QLPreviewControllerDataSou
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Notícias"
+
+        if !Reachability().networkVerification() {
+            ProgressHUD.showError("Sem Conexão", interaction: false)
+            return
+        }
         
         self.newspaperManager.delegate = self
-        
         newspaperManager.getNewspapers()
         ProgressHUD.show("Carregando...", interaction: false)
         
@@ -33,13 +37,6 @@ class NewsTableViewController: UITableViewController, QLPreviewControllerDataSou
       
         self.tableView.addSubview(refresher)
         tableView.sendSubview(toBack: refresher)
-        
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
     override func didReceiveMemoryWarning() {
