@@ -28,7 +28,7 @@ class NewsTableViewController: UITableViewController, QLPreviewControllerDataSou
         
         self.newspaperManager.delegate = self
         newspaperManager.getNewspapers()
-        ProgressHUD.show("Carregando...", interaction: false)
+        ProgressHUD.show("Carregando...", interaction: true)
         
         refresher  = UIRefreshControl ()
         refresher.attributedTitle = NSAttributedString(string: "Deslize para atualizar")
@@ -76,7 +76,7 @@ class NewsTableViewController: UITableViewController, QLPreviewControllerDataSou
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.newspaperManager.getPDF(self.allNews[indexPath.row])
-        ProgressHUD.show("Carregamento...", interaction: false)
+        ProgressHUD.show("Carregamento...", interaction: true)
     }
     
     //MARK: QuickLook DataSources

@@ -8,22 +8,13 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
 
 class ChapterCollectionViewController: UICollectionViewController {
     
-    let chapters = [1,2,3,4,5,6,7,8,9,10]
+    var chapters = [Chapter]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,20 +42,20 @@ class ChapterCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return chapters.count
+        return self.chapters.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChapterCollectionCell", for: indexPath) as! ChapterCollectionViewCell
-    
-          cell.chapterLabel.text = String(chapters[indexPath.row])
-    
+        cell.chapterLabel.text = String(chapters[indexPath.row].number!)
+
         return cell
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Bible", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "ReadBibleView")
+        BibleManager.sharedInstance.selectChapter(chapter: chapters[indexPath.row])
         self.navigationController?.pushViewController(viewController, animated: true)        
     }
 

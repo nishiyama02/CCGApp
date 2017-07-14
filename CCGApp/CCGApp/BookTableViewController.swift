@@ -10,14 +10,13 @@ import UIKit
 
 class BookTableViewController: UITableViewController {
     
-    let books = ["Genesis", "Exodo", "Levítico", "Números", "Deuterônomio, Josué", "Juízes", "Rute", "1 Samuel", "2 Samuel"]
-    
-    
-    
+    var books = [Book]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        books = BibleManager.sharedInstance.getAllBooks()
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -46,16 +45,13 @@ class BookTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BookNameCell", for: indexPath) as! BookNameTableViewCell
         
-            cell.bookNameLabel.text = books[indexPath.row]
+            cell.bookNameLabel.text = books[indexPath.row].name
         
-            
-
-        // Configure the cell...
-
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        BibleManager.sharedInstance.selectBook(book: books[indexPath.row])
         let bibleViewController = self.parent as? BibleViewController
         bibleViewController?.segmentedControl.selectedIndex = 1
         bibleViewController?.segmentedChangedValue((bibleViewController?.segmentedControl)!)

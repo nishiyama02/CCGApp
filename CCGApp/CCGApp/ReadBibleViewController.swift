@@ -32,12 +32,19 @@ class ReadBibleViewController: UIViewController, UICollectionViewDelegate, UICol
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.noturneButton.layer.borderColor = UIColor.white.cgColor
         self.settingsView.layer.borderColor = UIColor.lightGray.cgColor
         self.fontCollectionView.delegate = self
         self.fontCollectionView.dataSource = self
         self.bibleTextView.scrollRangeToVisible(NSRange(location: 0, length: 1))
+        self.bibleTextView.font = UIFont(name: fontFamily, size: CGFloat(fontSize))
+        
+        let versicles = BibleManager.sharedInstance.getChapter().versicles
+        var versiclesString = ""
+        for item in versicles! {
+            versiclesString = "\(versiclesString)\(item.number!). \(item.body!)\n"
+        }
+        self.bibleTextView.text = versiclesString
     }
 
     override func didReceiveMemoryWarning() {

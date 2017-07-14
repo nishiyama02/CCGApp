@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CE0-FJ-8jA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CE0-FJ-8jA">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -209,27 +209,18 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SuQ-7J-UFA">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wkb-WP-nXP">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <attributes>
-                                            <color key="NSColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="17" name="Futura-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="RBX-1N-r5F" appends="YES" id="whP-Tq-Fi6"/>
+                                    <outletCollection property="gestureRecognizers" destination="7f6-9r-cqc" appends="YES" id="gDp-zG-hfk"/>
                                 </connections>
                             </textView>
                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ha9-Tt-TaA">
-                                <rect key="frame" x="8" y="2" width="359" height="220"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="222"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="17" minValue="10" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="Yw0-SV-DAG">
                                         <rect key="frame" x="87" y="8" width="223" height="31"/>
@@ -336,21 +327,21 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.93400276512889413" green="0.9432503172588832" blue="0.9432503172588832" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="inw-fw-eJY" secondAttribute="trailing" constant="-8" id="5Kh-6X-HlN"/>
+                                    <constraint firstAttribute="trailing" secondItem="inw-fw-eJY" secondAttribute="trailing" constant="8" id="5Kh-6X-HlN"/>
                                     <constraint firstItem="dhR-uS-ot5" firstAttribute="leading" secondItem="Ha9-Tt-TaA" secondAttribute="leading" constant="8" id="8eP-UZ-Ioy"/>
                                     <constraint firstItem="dhR-uS-ot5" firstAttribute="top" secondItem="Ha9-Tt-TaA" secondAttribute="top" constant="13" id="Dab-2r-heo"/>
                                     <constraint firstItem="inw-fw-eJY" firstAttribute="top" secondItem="Ha9-Tt-TaA" secondAttribute="top" constant="13" id="G9v-RQ-KrX"/>
                                     <constraint firstItem="Yw0-SV-DAG" firstAttribute="leading" secondItem="dhR-uS-ot5" secondAttribute="trailing" constant="-1" id="Pe4-GA-tb3"/>
                                     <constraint firstItem="6zt-ar-b7z" firstAttribute="top" secondItem="Yw0-SV-DAG" secondAttribute="bottom" constant="19" id="QxP-bG-b71"/>
                                     <constraint firstItem="pse-n6-hUs" firstAttribute="top" secondItem="6zt-ar-b7z" secondAttribute="bottom" constant="17" id="X69-Tu-XHL"/>
-                                    <constraint firstItem="4Dj-ZB-kct" firstAttribute="centerX" secondItem="Ha9-Tt-TaA" secondAttribute="centerX" constant="8" id="ZG4-Mj-Az3"/>
+                                    <constraint firstItem="4Dj-ZB-kct" firstAttribute="centerX" secondItem="Ha9-Tt-TaA" secondAttribute="centerX" id="ZG4-Mj-Az3"/>
                                     <constraint firstItem="6zt-ar-b7z" firstAttribute="leading" secondItem="Ha9-Tt-TaA" secondAttribute="leading" constant="8" id="dtQ-of-mYI"/>
                                     <constraint firstItem="inw-fw-eJY" firstAttribute="leading" secondItem="Yw0-SV-DAG" secondAttribute="trailing" constant="17" id="fBb-zm-ltc"/>
-                                    <constraint firstAttribute="height" constant="220" id="irV-eg-cRV"/>
+                                    <constraint firstAttribute="height" constant="222" id="irV-eg-cRV"/>
                                     <constraint firstItem="Yw0-SV-DAG" firstAttribute="top" secondItem="Ha9-Tt-TaA" secondAttribute="top" constant="8" id="lIf-Ka-zlo"/>
                                     <constraint firstItem="4Dj-ZB-kct" firstAttribute="top" secondItem="pse-n6-hUs" secondAttribute="bottom" constant="8" id="pTz-Qw-7Or"/>
-                                    <constraint firstItem="pse-n6-hUs" firstAttribute="centerX" secondItem="Ha9-Tt-TaA" secondAttribute="centerX" constant="8" id="s5M-Nf-CVH"/>
-                                    <constraint firstAttribute="trailing" secondItem="6zt-ar-b7z" secondAttribute="trailing" constant="-8" id="z83-ET-RgM"/>
+                                    <constraint firstItem="pse-n6-hUs" firstAttribute="centerX" secondItem="Ha9-Tt-TaA" secondAttribute="centerX" id="s5M-Nf-CVH"/>
+                                    <constraint firstAttribute="trailing" secondItem="6zt-ar-b7z" secondAttribute="trailing" constant="8" id="z83-ET-RgM"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -365,13 +356,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ha9-Tt-TaA" secondAttribute="trailing" constant="-8" id="Fhn-vo-mnR"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="SuQ-7J-UFA" secondAttribute="trailing" constant="-16" id="GyV-WW-4S1"/>
-                            <constraint firstItem="Ha9-Tt-TaA" firstAttribute="top" secondItem="W0l-sT-iLM" secondAttribute="bottom" constant="2" id="OUQ-lh-Lr7"/>
-                            <constraint firstItem="SuQ-7J-UFA" firstAttribute="leading" secondItem="Ozt-nK-I6E" secondAttribute="leadingMargin" constant="-16" id="ebm-tc-baj"/>
-                            <constraint firstItem="yd2-sr-0hq" firstAttribute="top" secondItem="SuQ-7J-UFA" secondAttribute="bottom" id="fKd-Sq-oyZ"/>
-                            <constraint firstItem="Ha9-Tt-TaA" firstAttribute="leading" secondItem="Ozt-nK-I6E" secondAttribute="leadingMargin" constant="-8" id="l0I-MS-tEM"/>
-                            <constraint firstItem="SuQ-7J-UFA" firstAttribute="top" secondItem="W0l-sT-iLM" secondAttribute="bottom" id="l7Q-b9-jvh"/>
+                            <constraint firstItem="yd2-sr-0hq" firstAttribute="top" secondItem="wkb-WP-nXP" secondAttribute="bottom" id="619-D1-8In"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ha9-Tt-TaA" secondAttribute="trailing" constant="-16" id="Fhn-vo-mnR"/>
+                            <constraint firstItem="wkb-WP-nXP" firstAttribute="leading" secondItem="Ozt-nK-I6E" secondAttribute="leading" id="OHe-rn-g18"/>
+                            <constraint firstItem="Ha9-Tt-TaA" firstAttribute="top" secondItem="W0l-sT-iLM" secondAttribute="bottom" id="OUQ-lh-Lr7"/>
+                            <constraint firstItem="wkb-WP-nXP" firstAttribute="top" secondItem="W0l-sT-iLM" secondAttribute="bottom" id="SbF-dF-AhE"/>
+                            <constraint firstAttribute="trailing" secondItem="wkb-WP-nXP" secondAttribute="trailing" id="Zb5-eU-g6h"/>
+                            <constraint firstItem="Ha9-Tt-TaA" firstAttribute="leading" secondItem="Ozt-nK-I6E" secondAttribute="leadingMargin" constant="-16" id="l0I-MS-tEM"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -385,7 +376,7 @@
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <connections>
-                        <outlet property="bibleTextView" destination="SuQ-7J-UFA" id="lDH-6O-cEM"/>
+                        <outlet property="bibleTextView" destination="wkb-WP-nXP" id="dpV-ga-CK9"/>
                         <outlet property="fontCollectionView" destination="6zt-ar-b7z" id="M7Y-sK-Vqm"/>
                         <outlet property="noturneButton" destination="pse-n6-hUs" id="0cC-2V-Z4K"/>
                         <outlet property="settingsView" destination="Ha9-Tt-TaA" id="GSm-Ne-UEG"/>
@@ -394,9 +385,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eB8-3m-AFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="RBX-1N-r5F">
+                <tapGestureRecognizer id="7f6-9r-cqc">
                     <connections>
-                        <action selector="tapDismissSettingsViewAction:" destination="Pyk-4b-pGy" id="VAC-fV-tFY"/>
+                        <action selector="tapDismissSettingsViewAction:" destination="Pyk-4b-pGy" id="2Jq-Le-0xX"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

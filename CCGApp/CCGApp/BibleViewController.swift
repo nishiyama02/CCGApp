@@ -36,7 +36,9 @@ class BibleViewController: UIViewController {
         } else {
             collectionViewContainer.isHidden = false
             tableViewContainer.isHidden = true
-            
+            let chapterViewController = self.childViewControllers[1] as! ChapterCollectionViewController
+            chapterViewController.chapters = BibleManager.sharedInstance.getBook().chapters
+            chapterViewController.collectionView?.reloadData()
         }
     }
     
